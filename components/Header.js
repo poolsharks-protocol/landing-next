@@ -5,9 +5,16 @@ import coins from '../public/coins.png'
 import lines from '../public/hero-bg.png'
 import { useEffect, useState } from 'react'
 
-function Header() {
+function Header(props) {
   const [w, setW] = useState(0)
-    
+
+    const changeState = () => {
+      console.log("kakoe")
+      setTimeout(() => {
+        console.log("nikako")
+        props.setIsHeaderLoaded(true)
+      }, 400);
+    }
 
     useEffect(() => {
       setW(window.innerWidth)
@@ -27,7 +34,7 @@ function Header() {
         </div>
         <div className="col-md-6">
           <div className="shark">
-            <img src={shark.src} className="shark-img" />
+            <img onLoad={changeState} src={shark.src} className="shark-img" />
           </div>
         </div>
         <div className="col-md-2 mt-5">

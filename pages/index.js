@@ -9,8 +9,12 @@ import CoinVideos from "../components/CoinVideos";
 import BigVideo from "../components/BigVideo";
 import Pipes from "../components/Pipes";
 import Footer from "../components/Footer";
+import { useState } from "react";
 
 export default function Home() {
+  const [isLoaded, setIsLoaded] = useState(false)
+  const [isHeaderLoaded, setIsHeaderLoaded] = useState(false)
+  
   return (
     <div className={styles.container}>
       <Head>
@@ -19,23 +23,30 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+            {!isHeaderLoaded && <div className="vibrate-1">
+              <h1 className="text-center">Loading...</h1>
+              </div>}
       <div className="wholeapp">
         <div className="container">
-          <Header />
+        {isLoaded &&  <Header setIsHeaderLoaded={setIsHeaderLoaded}/>}
           <div className="container big-margin"></div>
           <div className="container">
-            <TextBox />
+            {isLoaded && <TextBox />}
             <div className="pipe-box ">
-              <Pipes />
+              <Pipes isLoaded={isLoaded} setIsLoaded={setIsLoaded}/>
+              {isLoaded &&
+              <>
               <BigVideo />
               <CoinVideos />
               <SecondBox />
               <ThirdBox />
               <LastBox />
+              </>
+              }
             </div>
           </div>
         </div>
-        <Footer />
+        {isLoaded && <Footer />}
       </div>
     </div>
   );
