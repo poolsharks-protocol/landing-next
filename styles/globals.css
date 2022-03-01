@@ -1,16 +1,721 @@
-html,
-body {
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+ html, body {
+  background: black!important;
+  color: white!important;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('../public/grid.png');
+  overflow-x: hidden;
+}
+
+.footer {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgb(0, 0, 0);
+}
+
+.footer > * {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer > div > p {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.links > * {
+  padding: 10px;
+  cursor: pointer;
 }
 
-* {
-  box-sizing: border-box;
+
+
+.btn-footer {
+  background: #0071D9;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  padding: 3px 9px;
+  box-shadow: 0px 0px 7px 0 #0071D9;
 }
+
+.burger-menu {
+  display: none;
+}
+
+.wholeapp {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  overflow: hidden;
+}
+
+.slogan {
+  font-size: 18px;
+  text-align: right;
+  font-weight: 500;
+  margin-top: 53px;
+  margin-bottom: 54px;
+  letter-spacing: 1.3px;
+}
+
+.lines {
+  position: absolute;
+  left: 0;
+  top: 900px;
+  height: 500px!important;
+  z-index: 1;
+  width: 100%;
+  margin-top: -250px;
+  height: auto;
+}
+
+.cta-wrapper {
+  display: inline-block;
+  text-align: right;
+  margin-top: 51px;
+  margin-left: -50px;
+}
+
+.cta {
+  background: white;
+  outline: none;
+  border: none;
+  font-size: 27px;
+  font-weight: 700;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 0 #ced8f7;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  padding: 1px 15px;
+}
+
+.coins {
+  width: 140%;
+  margin-left: 150px;
+}
+
+.logo {
+  display: block;
+  margin-bottom: 47px;
+}
+
+.header-images-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.shark-img {
+  margin-top: 80px;
+  max-width:1100px;
+  margin-left: -340px;
+  z-index: 3;
+  position: relative;
+}
+
+.big-margin {
+  margin-top: 200px;
+}
+
+
+
+
+
+
+.box-label {
+  font-weight: 500;
+  font-size: 55px;
+  width: 100%;
+  color: #27F09E;
+  position: relative;
+  z-index: 2;
+  line-height: 56px;
+}
+.white-txt {
+  color: white;
+  margin-bottom: 0;
+}
+
+.first-box {
+  margin-left: -60px;
+}
+
+.box-text {
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  z-index: 2;
+  position: relative;
+} 
+
+.pipe {
+  width: 220%;
+  margin-top: -800px;
+  margin-left: -705px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.pipe-box {
+  position: relative;
+}
+
+
+
+
+.right-box {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 400px;
+  right: -100px;
+
+}
+
+.z-index {
+  position: relative;
+  z-index: 2;
+}
+
+.left-box {
+  position: absolute;
+  top: 1350px;
+  left: -60px;
+}
+
+.center-box {
+  position: absolute;
+  bottom: 800px;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  right: -100px;
+}
+
+
+
+.video {
+  position:absolute;
+  bottom:1728px;
+  left: 180px;
+}
+
+iframe {
+  pointer-events:none
+}
+
+.first-video {
+  position: absolute;
+  left: -22px;
+  top: 165px;
+}
+
+.second-video {
+  position: absolute;
+  left: 824px;
+  top: 1024px;
+}
+
+.third-video {
+  position: absolute;
+  left: 37px;
+  top: 1769px;
+}
+
+.fourth-video {
+  position: absolute;
+  left: 905px;
+  top: 3074px;
+}
+
+
+.coin-one {
+  position: absolute;
+  right: 50px;
+  top: -400px;
+  z-index: 2;
+
+}
+
+.coin-two {
+  position: absolute;
+  left: 300px;
+  bottom: 600px;
+}
+
+
+
+@media only screen and (min-width: 1700px) {
+  .cta-wrapper {
+    margin-left: -250px;
+  }
+
+}
+
+@media only screen and (max-width: 1700px) {
+
+  .shark-img {
+    margin-top: 140px;
+    max-width:900px;
+    margin-left: -110px;
+  }
+
+  .coins {
+    margin-left: -30px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .right-box {
+    top: 290px;
+  }
+  .left-box {
+    top: 1050px;
+  }
+
+  .box-label {
+    font-size: 35px;
+  }
+
+  .box-text {
+    font-size: 25px;
+  }
+
+  .right-box {
+    top: 350px;
+  }
+
+  .left-box {
+    top: 1130px;
+  }
+
+  .center-box {
+    bottom: 700px;
+  }
+
+  .video {
+    top: 1882px;
+    left: 60px;
+  }
+
+  .pipe {
+    width: 220%;
+    margin-top: -720px;
+    margin-left: -700px;
+  }
+
+  .coin-two {
+    left: 250px;
+    bottom: 500px;
+  }
+  .first-video {
+    top: 109px;
+    left: -141px;
+  }
+
+  .second-video {
+    position: absolute;
+    left: 534px;
+    top: 847px;
+  }
+
+  .third-video {
+    position: absolute;
+    left: -59px;
+    top: 1482px;
+  }
+
+  .fourth-video {
+    position: absolute;
+    left: 685px;
+    top: 2600px;
+  }
+}
+
+
+@media only screen and (max-width: 1650px) {
+  .cta-wrapper {
+    margin-left: -30px;
+  }
+
+  .coins {
+    margin-left: -30px;
+  }
+
+  .right-box {
+    right: 0;
+  }
+
+  .center-box {
+    right: 0;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+
+  .shark-img {
+    margin-top: 260px;
+    max-width:598px;
+    margin-left: 100px;
+    z-index: 2;
+    position: relative;
+  }
+
+  .first-box {
+    margin-left: 0;
+  }
+
+  .left-box {
+    left: 0;
+  }
+
+  .coins {
+    margin-left: 0;
+  }
+
+  .big-margin {
+    margin-top: 400px;
+  }
+
+
+  
+  .cta-wrapper{
+    margin-left: 0;
+  }
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .logo {
+    width: 100px;
+  }
+
+  .poolshark-name {
+    width: 400px;
+  }
+
+  .cta-wrapper {
+    margin-left: -60px;
+    width: 400px;
+  }
+  .slogan {
+    font-size: 14px;
+  }
+
+  .shark-img {
+    margin-left: -60px;
+  }
+
+  .first-box {
+    margin-left: -70px;
+  }
+
+  .box-text {
+    font-size: 20px;
+  }
+
+  .coin-two {
+    height: 100px;
+  }
+
+  .center-box {
+    text-align: right;
+    width: 100%;
+    bottom: 580px;
+    margin-right: -60px;
+  }
+
+  .right-box{
+    top: 340px;
+    margin-right: -60px;
+  }
+
+  .left-box {
+    top: 1000px;
+    margin-left: -70px;
+  }
+
+   .box-label {
+     font-size: 25px;
+
+   }
+
+   .z-index {
+     text-align: center;
+   }
+
+   .pipe {
+     margin-left: -570px;
+     margin-top: -610px;
+     width: 230%;
+   }
+
+   .video {
+     left: 95px;
+     top: 1663px;
+   }
+   .first-video {
+    top: 114px;
+    left: -117px;
+  }
+
+  .second-video {
+    position: absolute;
+    left: 502px;
+    top: 758px;
+  }
+
+  .third-video {
+    position: absolute;
+    left: -10px;
+    top: 1310px;
+  }
+
+  .fourth-video {
+    position: absolute;
+    left: 640px;
+    top: 2291px;
+  }
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .cta-wrapper {
+    margin-left: 10px;
+  }
+  .coins {
+    margin-left: -35px;
+  }
+  .burger-menu {
+    display: none;
+  }
+
+  .left-box {
+    top: 1000px;
+  }
+
+  .center-box {
+    bottom: 650px;
+  }
+
+}
+
+
+@media only screen and (max-width: 994px) {
+  .shark-img {
+    display: none!important;
+  }
+
+  .center-box {
+
+    margin: 0;
+  }
+
+  .coins {
+    display: none;
+  }
+
+  .lines {
+    display: none;
+  }
+
+  .pipe {
+    display: none!important;
+  }
+
+
+  .box-label {
+    font-size: 35px;
+  }
+
+  .z-index {
+    text-align: center;
+    margin-top: 130px;
+  }
+
+  .box-text {
+    width: 100%;
+    font-size: 20px;
+    background:black;
+  }
+
+  .first-box {
+    margin-left: 0;
+  }
+
+  .right-box{
+   position: static;
+   width: 100%;
+   margin-top: 130px;
+   
+  }
+
+  .left-box {
+    position: static;
+    margin-top: 130px;
+    margin-left: 0;
+  }
+
+  .footer {
+    margin-top: 100px;
+  }
+
+  .center-box {
+    position: static;
+    width: 100%;
+    margin-top: 130px;
+  }
+
+
+   .cta-wrapper {
+     text-align: left;
+   }
+
+   .slogan {
+     text-align: left;
+     width: 80%;
+   }
+
+   .cta {
+     border-radius: 30px;
+     box-shadow: 0 0 17px 0px white;
+     padding: 11px 23px;
+     margin-left: 12px;
+   }
+
+   .poolshark-name {
+     margin-top: 30px;
+   }
+
+
+   .mobile-lines {
+    position: absolute;
+    margin: 0;
+    top: 0px;
+    bottom: 0;
+    width: 100vh;
+    left: 300px;
+    z-index: 0;
+    opacity: .8;
+  }
+
+  .wholeapp {
+    background-image: url("../public/mobilelines.svg");
+    background-repeat: no-repeat;
+    background-position: 500px;
+    z-index: 0;
+  }
+  .burger-menu {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+  }
+
+
+}
+
+
+
+
+@media only screen and (max-width: 565px) {
+  .poolshark-name {
+    width: 70%;
+  }
+
+  .wholeapp {
+    background-position: 100px;
+  }
+
+  .slogan {
+    width: 70%;
+    font-size: 29px;
+    margin-bottom: 200px;
+  }
+
+  .wholeapp {
+    background-position: 220px;
+  }
+
+  .box-label {
+    font-size: 33px;
+  }
+
+  .sm-label {
+    width: 70%;
+    margin-bottom: 50px;
+  }
+
+  .sm-label-two {
+    margin-bottom: 50px;
+    text-align: left;
+  }
+
+  .strike {
+    text-align: left!important;
+  }
+
+  .big-margin {
+    margin-top: 100px;
+  }
+
+
+  .box-text {
+    text-align: left!important;
+  }
+
+  .center-box {
+    text-align: left;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  .poolshark-name {
+    width: 70%;
+  }
+
+
+  .wholeapp {
+    background-position: 150px -400px;
+  }
+
+  .slogan {
+    font-size: 20px;
+    text-align: center;
+  }
+
+
+  .box-text {
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 17px;
+  }
+  .box-label {
+    width: 95%;
+    font-size: 27px;
+    line-height: normal;
+  }
+
+}
+
+
+
+
