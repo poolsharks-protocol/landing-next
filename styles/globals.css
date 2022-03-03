@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 
-
- html, body {
-  background: black!important;
-  color: white!important;
-  font-family: 'Montserrat', sans-serif;
-  background-image: url('../public/grid.png');
+body {
+  background: black !important;
+  color: white !important;
+  font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
 
@@ -33,16 +31,14 @@
   cursor: pointer;
 }
 
-
-
 .btn-footer {
-  background: #0071D9;
+  background: #0071d9;
   border-radius: 8px;
   border: none;
   color: white;
   font-size: 14px;
   padding: 3px 9px;
-  box-shadow: 0px 0px 7px 0 #0071D9;
+  box-shadow: 0px 0px 7px 0 #0071d9;
 }
 
 .burger-menu {
@@ -55,6 +51,7 @@
   left: 50%;
   transform: translate(-50%);
   overflow: hidden;
+  background-image: url("../public/grid.png");
 }
 
 .slogan {
@@ -70,7 +67,7 @@
   position: absolute;
   left: 0;
   top: 900px;
-  height: 500px!important;
+  height: 500px !important;
   z-index: 1;
   width: 100%;
   margin-top: -250px;
@@ -115,7 +112,7 @@
 
 .shark-img {
   margin-top: 80px;
-  max-width:1100px;
+  max-width: 1100px;
   margin-left: -340px;
   z-index: 3;
   position: relative;
@@ -127,48 +124,55 @@
 }
 @keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
     margin-top: 200px;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
-​
-@-moz-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+​ @-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-​
-@-webkit-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+​ @-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-​
-@-o-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+​ @-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-​
-@-ms-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+​ @-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .big-margin {
   margin-top: 200px;
 }
 
-
-
-
-
-
 .box-label {
   font-weight: 500;
   font-size: 55px;
   width: 100%;
-  color: #27F09E;
+  color: #27f09e;
   position: relative;
   z-index: 2;
   line-height: 56px;
@@ -190,7 +194,7 @@
   flex-direction: column;
   z-index: 2;
   position: relative;
-} 
+}
 
 .pipe {
   width: 220%;
@@ -208,7 +212,7 @@
 
 .vibrate-1 {
   background: rgb(0, 0, 0);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
@@ -218,14 +222,12 @@
   padding-top: 300px;
 }
 
-
 .right-box {
   display: flex;
   justify-content: flex-end;
   position: absolute;
   top: 400px;
   right: -100px;
-
 }
 
 .z-index {
@@ -248,16 +250,14 @@
   right: -100px;
 }
 
-
-
 .video {
-  position:absolute;
-  bottom:1728px;
+  position: absolute;
+  bottom: 1728px;
   left: 180px;
 }
 
 iframe {
-  pointer-events:none
+  pointer-events: none;
 }
 
 .first-video {
@@ -284,13 +284,11 @@ iframe {
   top: 3074px;
 }
 
-
 .coin-one {
   position: absolute;
   right: 50px;
   top: -400px;
   z-index: 2;
-
 }
 
 .coin-two {
@@ -299,20 +297,16 @@ iframe {
   bottom: 600px;
 }
 
-
-
 @media only screen and (min-width: 1700px) {
   .cta-wrapper {
     margin-left: -250px;
   }
-
 }
 
 @media only screen and (max-width: 1700px) {
-
   .shark-img {
     margin-top: 140px;
-    max-width:900px;
+    max-width: 900px;
     margin-left: -110px;
   }
 
@@ -322,13 +316,6 @@ iframe {
 }
 
 @media only screen and (max-width: 1400px) {
-  .right-box {
-    top: 290px;
-  }
-  .left-box {
-    top: 1050px;
-  }
-
   .box-label {
     font-size: 35px;
   }
@@ -337,27 +324,32 @@ iframe {
     font-size: 25px;
   }
 
+  .first-box {
+    margin-left: 0;
+  }
+
   .right-box {
     top: 350px;
+    right: -66px;
   }
 
   .left-box {
-    top: 1130px;
+    top: 1030px;
   }
 
   .center-box {
-    bottom: 700px;
+    bottom: 650px;
   }
 
   .video {
-    top: 1882px;
-    left: 60px;
+    top: 1764px;
+    left: 175px;
   }
 
   .pipe {
-    width: 220%;
+    width: 210%;
     margin-top: -720px;
-    margin-left: -700px;
+    margin-left: -550px;
   }
 
   .coin-two {
@@ -365,29 +357,28 @@ iframe {
     bottom: 500px;
   }
   .first-video {
-    top: 109px;
-    left: -141px;
+    top: 72px;
+    left: -7px;
   }
 
   .second-video {
     position: absolute;
-    left: 534px;
-    top: 847px;
+    left: 620px;
+    top: 777px;
   }
 
   .third-video {
     position: absolute;
-    left: -59px;
-    top: 1482px;
+    left: 52px;
+    top: 1386px;
   }
 
   .fourth-video {
     position: absolute;
-    left: 685px;
-    top: 2600px;
+    left: 765px;
+    top: 2454px;
   }
 }
-
 
 @media only screen and (max-width: 1650px) {
   .cta-wrapper {
@@ -405,16 +396,12 @@ iframe {
   .center-box {
     right: 0;
   }
-
 }
 
-
-
 @media only screen and (max-width: 1300px) {
-
   .shark-img {
     margin-top: 260px;
-    max-width:598px;
+    max-width: 598px;
     margin-left: 100px;
     z-index: 2;
     position: relative;
@@ -436,14 +423,10 @@ iframe {
     margin-top: 400px;
   }
 
-
-  
-  .cta-wrapper{
+  .cta-wrapper {
     margin-left: 0;
   }
-
 }
-
 
 @media only screen and (max-width: 1200px) {
   .logo {
@@ -485,7 +468,7 @@ iframe {
     margin-right: -60px;
   }
 
-  .right-box{
+  .right-box {
     top: 340px;
     margin-right: -60px;
   }
@@ -495,26 +478,26 @@ iframe {
     margin-left: -70px;
   }
 
-   .box-label {
-     font-size: 25px;
+  .box-label {
+    font-size: 25px;
+    line-height: 32px;
+  }
 
-   }
+  .z-index {
+    text-align: center;
+  }
 
-   .z-index {
-     text-align: center;
-   }
+  .pipe {
+    margin-left: -570px;
+    margin-top: -610px;
+    width: 230%;
+  }
 
-   .pipe {
-     margin-left: -570px;
-     margin-top: -610px;
-     width: 230%;
-   }
-
-   .video {
-     left: 95px;
-     top: 1663px;
-   }
-   .first-video {
+  .video {
+    left: 95px;
+    top: 1663px;
+  }
+  .first-video {
     top: 114px;
     left: -117px;
   }
@@ -538,7 +521,6 @@ iframe {
   }
 }
 
-
 @media only screen and (max-width: 1100px) {
   .cta-wrapper {
     margin-left: 10px;
@@ -557,17 +539,26 @@ iframe {
   .center-box {
     bottom: 650px;
   }
-
+  .right-box {
+    margin-right: 0;
+  }
+  .first-box {
+    margin-left: 0;
+  }
+  .left-box {
+    margin-left: 0;
+  }
+  .center-box {
+    margin-right: 0;
+  }
 }
-
 
 @media only screen and (max-width: 994px) {
   .shark-img {
-    display: none!important;
+    display: none !important;
   }
 
   .center-box {
-
     margin: 0;
   }
 
@@ -580,9 +571,8 @@ iframe {
   }
 
   .pipe {
-    display: none!important;
+    display: none !important;
   }
-
 
   .box-label {
     font-size: 35px;
@@ -596,18 +586,19 @@ iframe {
   .box-text {
     width: 100%;
     font-size: 20px;
-    background:black;
+    background: rgba(0, 0, 0, 0.659);
+    border-radius: 10px;
+    padding: 10px;
   }
 
   .first-box {
     margin-left: 0;
   }
 
-  .right-box{
-   position: static;
-   width: 100%;
-   margin-top: 130px;
-   
+  .right-box {
+    position: static;
+    width: 100%;
+    margin-top: 130px;
   }
 
   .left-box {
@@ -626,29 +617,27 @@ iframe {
     margin-top: 130px;
   }
 
+  .cta-wrapper {
+    text-align: left;
+  }
 
-   .cta-wrapper {
-     text-align: left;
-   }
+  .slogan {
+    text-align: left;
+    width: 80%;
+  }
 
-   .slogan {
-     text-align: left;
-     width: 80%;
-   }
+  .cta {
+    border-radius: 30px;
+    box-shadow: 0 0 17px 0px white;
+    padding: 11px 23px;
+    margin-left: 12px;
+  }
 
-   .cta {
-     border-radius: 30px;
-     box-shadow: 0 0 17px 0px white;
-     padding: 11px 23px;
-     margin-left: 12px;
-   }
+  .poolshark-name {
+    margin-top: 30px;
+  }
 
-   .poolshark-name {
-     margin-top: 30px;
-   }
-
-
-   .mobile-lines {
+  .mobile-lines {
     position: absolute;
     margin: 0;
     top: 0px;
@@ -656,7 +645,7 @@ iframe {
     width: 100vh;
     left: 300px;
     z-index: 0;
-    opacity: .8;
+    opacity: 0.8;
   }
 
   .wholeapp {
@@ -672,12 +661,7 @@ iframe {
     right: 50px;
     cursor: pointer;
   }
-
-
 }
-
-
-
 
 @media only screen and (max-width: 565px) {
   .poolshark-name {
@@ -704,25 +688,22 @@ iframe {
 
   .sm-label {
     width: 70%;
-    margin-bottom: 50px;
   }
 
   .sm-label-two {
-    margin-bottom: 50px;
     text-align: left;
   }
 
   .strike {
-    text-align: left!important;
+    text-align: left !important;
   }
 
   .big-margin {
     margin-top: 100px;
   }
 
-
   .box-text {
-    text-align: left!important;
+    text-align: left !important;
   }
 
   .center-box {
@@ -730,12 +711,76 @@ iframe {
   }
 }
 
+@media only screen and (width: 1200px) {
+  .cta-wrapper {
+    margin-left: 0;
+  }
+
+  .coins {
+    margin-left: -40px;
+  }
+
+  .shark-img {
+    margin-left: -20px;
+    margin-top: 220px;
+  }
+  .lines {
+    top: 800px;
+  }
+
+  .pipe {
+    width: 180%;
+    margin-left: -400px;
+  }
+  .first-box {
+    margin-left: 0;
+    padding-right: 20px;
+  }
+  .right-box {
+    margin-right: 0;
+    top: 300px;
+  }
+  .left-box {
+    margin-left: 0;
+    top: 950px;
+  }
+
+  .center-box {
+    margin-right: 0;
+  }
+
+  .first-video {
+    top: 69px;
+    left: 55px;
+  }
+  .second-video {
+    left: 606px;
+    top: 673px;
+  }
+  .third-video {
+    left: 124px;
+    top: 1192px;
+  }
+  .fourth-video {
+    left: 735px;
+    top: 2104px;
+  }
+
+  .video {
+    left: 222px;
+    top: 1520px;
+  }
+
+  .coin-two {
+    bottom: 450px;
+    left: 290px;
+  }
+}
 
 @media only screen and (max-width: 400px) {
   .poolshark-name {
     width: 70%;
   }
-
 
   .wholeapp {
     background-position: 150px -400px;
@@ -745,7 +790,6 @@ iframe {
     font-size: 20px;
     text-align: center;
   }
-
 
   .box-text {
     background-repeat: no-repeat;
@@ -757,9 +801,4 @@ iframe {
     font-size: 27px;
     line-height: normal;
   }
-
 }
-
-
-
-
