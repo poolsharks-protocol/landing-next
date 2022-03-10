@@ -15,9 +15,9 @@ function Pipes(props) {
 
   return (
     <>
-      {props.isLoaded && <img alt="coin" src={w > 994 ? coin1.src : undefined} className="coin-one" />}
+      {props.isLoaded && w > 994 && <img alt="coin" src={coin1.src} className="coin-one" />}
       <img alt="pipes" onLoad={()=> props.setIsLoaded(true)} src={pipe.src} className={`pipe`} />
-      {props.isLoaded && <img alt="coin" src={w > 994 ? coin2.src : undefined} className="coin-two" />}
+      {props.isLoaded && w > 994 && <img alt="coin" src={coin2.src} className="coin-two" />}
     </>
   );
 }

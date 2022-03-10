@@ -95,9 +95,80 @@ body {
   padding: 1px 15px;
 }
 
-.coins {
-  width: 140%;
-  margin-left: 150px;
+.coins-wrapper {
+  position: relative;
+}
+
+
+.coin1 {
+  width: 140px;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  animation: entering 2s 3.6s backwards, float 6s ease-in-out infinite;
+  perspective: 800px;
+}
+
+.coin2 {
+  width: 140px;
+  position: absolute;
+  right: 80px;
+  top: 118px;
+  animation: entering 2s 3s backwards, float2 8s ease-in-out infinite;
+}
+
+.coin3 {
+  width: 130px;
+  position: absolute;
+  right: 130px;
+  top: 10px;
+  animation: entering 2s 3.9s backwards, float3 4s  ease-in-out infinite;
+}
+@keyframes entering {
+	0% {
+    top: -400px;
+	}
+
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	40% {
+		transform: translatey(-20px) rotatez(-10deg) translateX(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes float2 {
+	0% {
+		transform: translatey(0px);
+    transform: translatex(0px);
+	}
+	50% {
+		transform: translatey(10px) rotateY(20deg) rotateZ(-22deg) translateX(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes float3 {
+	0% {
+		transform: translatey(0px);
+    rotate: 30deg;
+	}
+	50% {
+		transform: translatey(-10px) rotateZ(10deg) translateX(-4px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
 
 .logo {
@@ -105,15 +176,12 @@ body {
   margin-bottom: 47px;
 }
 
-.header-images-wrapper {
-  display: flex;
-  flex-direction: row;
-}
+
 
 .shark-img {
-  margin-top: 80px;
-  max-width: 1100px;
-  margin-left: -340px;
+  margin-top: 180px;
+  max-width: 900px;
+  margin-left: -200px;
   z-index: 3;
   position: relative;
   animation: fadeIn 2s 2s backwards;
@@ -125,7 +193,7 @@ body {
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    margin-top: 200px;
+    margin-top: 400px;
   }
   100% {
     opacity: 1;
@@ -170,7 +238,7 @@ body {
 
 .box-label {
   font-weight: 500;
-  font-size: 55px;
+  font-size: 44px;
   width: 100%;
   color: #27f09e;
   position: relative;
@@ -187,7 +255,7 @@ body {
 }
 
 .box-text {
-  font-size: 28px;
+  font-size: 24px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -286,7 +354,7 @@ iframe {
 
 .coin-one {
   position: absolute;
-  right: 50px;
+  right: 125px;
   top: -400px;
   z-index: 2;
 }
@@ -297,6 +365,19 @@ iframe {
   bottom: 600px;
 }
 
+.powered-wrapper {
+  background-color: rgba(0, 0, 0, 0.267);
+  width: 100%;
+  margin-top: 300px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.gelato {
+  -webkit-filter: drop-shadow(0px 5px 5px rgba(255, 229, 206, .7));
+  filter: drop-shadow(0px 0px 1px rgba(255, 229, 206, .7));
+}
+
 @media only screen and (min-width: 1700px) {
   .cta-wrapper {
     margin-left: -250px;
@@ -305,9 +386,9 @@ iframe {
 
 @media only screen and (max-width: 1700px) {
   .shark-img {
-    margin-top: 140px;
-    max-width: 900px;
-    margin-left: -110px;
+    margin-top: 240px;
+    max-width: 800px;
+    margin-left: -30px;
   }
 
   .coins {
@@ -346,10 +427,18 @@ iframe {
     left: 175px;
   }
 
+  .powered-wrapper {
+    margin-top: 443px;
+  }
+
   .pipe {
     width: 210%;
     margin-top: -720px;
     margin-left: -550px;
+  }
+
+  .coin-one {
+    right: 112px;
   }
 
   .coin-two {
@@ -377,6 +466,11 @@ iframe {
     position: absolute;
     left: 765px;
     top: 2454px;
+  }
+
+  .shark-img {
+    max-width: 600px;
+    margin-left: 50px;
   }
 }
 
@@ -419,10 +513,6 @@ iframe {
     margin-left: 0;
   }
 
-  .big-margin {
-    margin-top: 400px;
-  }
-
   .cta-wrapper {
     margin-left: 0;
   }
@@ -455,6 +545,11 @@ iframe {
 
   .box-text {
     font-size: 20px;
+  }
+
+  .coin-one {
+    top: -350px;
+    right: 80px;
   }
 
   .coin-two {
@@ -551,6 +646,9 @@ iframe {
   .center-box {
     margin-right: 0;
   }
+  .shark-img {
+    margin-left: 44px;
+  }
 }
 
 @media only screen and (max-width: 994px) {
@@ -586,7 +684,6 @@ iframe {
   .box-text {
     width: 100%;
     font-size: 20px;
-    background: rgba(0, 0, 0, 0.659);
     border-radius: 10px;
     padding: 10px;
   }
@@ -664,6 +761,11 @@ iframe {
 }
 
 @media only screen and (max-width: 565px) {
+  .powered-wrapper {
+    margin-top: 100px;
+    font-size: 20px;
+  }
+
   .poolshark-name {
     width: 70%;
   }
@@ -704,6 +806,7 @@ iframe {
 
   .box-text {
     text-align: left !important;
+    padding: 0;
   }
 
   .center-box {
@@ -778,6 +881,8 @@ iframe {
 }
 
 @media only screen and (max-width: 400px) {
+
+
   .poolshark-name {
     width: 70%;
   }

@@ -10,6 +10,7 @@ import BigVideo from "../components/BigVideo";
 import Pipes from "../components/Pipes";
 import Footer from "../components/Footer";
 import { useState } from "react";
+import PoweredBy from "../components/PoweredBy";
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -23,12 +24,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-            {!isHeaderLoaded && <div className="vibrate-1">
+            {!isHeaderLoaded && 
+            <div className="vibrate-1">
               <h1 className="text-center">Loading...</h1>
-              </div>}
+            </div>
+            }
       <div className="wholeapp">
         <div className="container">
         {isLoaded &&  <Header setIsHeaderLoaded={setIsHeaderLoaded}/>}
+        <PoweredBy />
           <div className="container big-margin"></div>
           <div className="container">
             {isLoaded && <TextBox />}

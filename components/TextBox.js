@@ -14,10 +14,10 @@ function TextBox() {
           {w > 995 && "Welcome to DeFi 3.0"} <br />{" "}
           <span className="white-txt">Smart Contract Automation</span>
         </p>
-        <div className="box-text mt-3">
+        <div className="box-text mt-4">
           <p>
             Time to level the playing field for DeFi users. <br /> PoolSharks provides
-            access to the power of the Ethereum DeFi ecosystem without
+            access to the power of the <br/> Ethereum DeFi ecosystem without
             limitations.
           </p>
         </div>

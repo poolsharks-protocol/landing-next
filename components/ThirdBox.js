@@ -12,8 +12,8 @@ function ThirdBox() {
     <div className="left-box">
       <div className="col-lg-8 col-sm-12" >
         <p className="box-label sm-label">Roam the Open DeFi Waters</p>
-        <div className="box-text mt-3">
-        Deposit your managed assets in a staking or yield farming contract to have the greatest 
+        <div className="box-text mt-4">
+        Deposit your managed assets in a staking or yield farming contract to have the greatest <br/> 
         advantage against the market and convert to a more preferred asset once your reward threshold 
         is met.
         </div>

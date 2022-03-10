@@ -4,14 +4,15 @@ import shark from '../public/shark.png'
 import coins from '../public/coins.png'
 import lines from '../public/hero-bg.png'
 import { useEffect, useState } from 'react'
+import coin1 from '../public/coin1.png'
+import coin2 from '../public/coin2.svg'
+import coin3 from '../public/coin3.png'
 
 function Header(props) {
   const [w, setW] = useState(0)
 
     const changeState = () => {
-      console.log("kakoe")
       setTimeout(() => {
-        console.log("nikako")
         props.setIsHeaderLoaded(true)
       }, 400);
     }
@@ -22,28 +23,27 @@ function Header(props) {
 
   return (
   <div className="container">
-    <div className="header-images-wrapper ">
       <div className="row">
         <div className="col-md-4">
           <div className="cta-wrapper">
             <img alt="logo" src={logo.src} className="logo"/>
             <img alt="Poolsharks" src={poolshark.src} className="poolshark-name" width="476px"/>
             <p className="slogan">Take a Bite out of Smart Contract Automation</p>
-            <button onClick={() =>window.location.href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"} className="cta">{w > 994 ? "VIEW DEMO": "ENTER APP"}</button>
+            <button onClick={() =>window.location.href="https://poolsharks-protocol.github.io/DCEX-Docs/"} 
+              className="cta">View Docs</button>
           </div>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-4">
           <div className="shark">
             <img alt="shark" onLoad={changeState} src={shark.src} className="shark-img" />
           </div>
         </div>
-        <div className="col-md-2 mt-5">
-          <img alt="coins" src={coins.src} className="coins" width="191px" />
-
-          
+        <div className="col-md-4 mt-5 coins-wrapper">
+          <img alt="coins" src={coin3.src} className="coins coin1"/>
+          <img alt="coins" src={coin2.src} className="coins coin2"/>
+          <img alt="coins" src={coin1.src} className="coins coin3"/>
         </div>
       </div>
-    </div>
     <img alt="lines" src={lines.src} className="lines" />
 
 
