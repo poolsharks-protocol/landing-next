@@ -26,25 +26,25 @@ function Header(props) {
       <div className="row">
         <div className="col-md-4">
           <div className="cta-wrapper">
-            <img src={logo.src} className="logo"/>
-            <img src={poolshark.src} className="poolshark-name" width="476px"/>
+            <img alt="logo" src={logo.src} className="logo"/>
+            <img alt="Poolsharks" src={poolshark.src} className="poolshark-name" width="476px"/>
             <p className="slogan">Take a Bite out of Smart Contract Automation</p>
             <button onClick={() =>window.location.href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"} className="cta">{w > 994 ? "VIEW DEMO": "ENTER APP"}</button>
           </div>
         </div>
         <div className="col-md-6">
           <div className="shark">
-            <img onLoad={changeState} src={shark.src} className="shark-img" />
+            <img alt="shark" onLoad={changeState} src={shark.src} className="shark-img" />
           </div>
         </div>
         <div className="col-md-2 mt-5">
-          <img src={coins.src} className="coins" width="191px" />
+          <img alt="coins" src={coins.src} className="coins" width="191px" />
 
           
         </div>
       </div>
     </div>
-    <img src={lines.src} className="lines" />
+    <img alt="lines" src={lines.src} className="lines" />
 
 
 
