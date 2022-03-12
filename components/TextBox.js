@@ -9,15 +9,15 @@ function TextBox() {
 
   return (
     <div className="first-box">
-      <div className="col-lg-6 col-xl-8 col-sm-12 ">
+      <div className="col-lg-6 col-lg-8 col-sm-12 ">
         <p className="box-label sm-label">
           {w > 995 && "Welcome to DeFi 3.0"} <br />{" "}
           <span className="white-txt">Smart Contract Automation</span>
         </p>
-        <div className="box-text mt-4">
+        <div className="box-text mt-5">
           <p>
-            Time to level the playing field for DeFi users. <br /> PoolSharks provides
-            access to the power of the <br/> Ethereum DeFi ecosystem without
+            Time to level the playing field for DeFi users. <br/> PoolSharks provides
+            access to the power of the Ethereum DeFi ecosystem without
             limitations.
           </p>
         </div>

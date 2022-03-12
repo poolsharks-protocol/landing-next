@@ -4,7 +4,7 @@ import ethereum from '../public/ethereum.png'
 
 function PoweredBy() {
   return (
-    <div className="powered-wrapper">
+    <div className="powered-wrapper ">
         <h2 className='text-center mb-5'>Powered by</h2>
         <div className='row'>
             <div className='col-4 text-center d-flex align-items-center flex-column justify-content-between'>

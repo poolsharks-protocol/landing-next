@@ -30,7 +30,7 @@ export default function Home() {
             </div>
             }
       <div className="wholeapp">
-        <div className="container">
+        <div className="container-fluid">
         {isLoaded &&  <Header setIsHeaderLoaded={setIsHeaderLoaded}/>}
         <PoweredBy />
           <div className="container big-margin"></div>

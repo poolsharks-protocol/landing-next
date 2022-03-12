@@ -22,23 +22,23 @@ function Header(props) {
     },[])
 
   return (
-  <div className="container">
+  <>
       <div className="row">
-        <div className="col-md-4">
-          <div className="cta-wrapper">
+        <div className="col-12 col-lg-4 d-flex align-items-end flex-column">
+          <div className="cta-wrapper pe-xxl-4 pt-5 me-xxl-5">
             <img alt="logo" src={logo.src} className="logo"/>
-            <img alt="Poolsharks" src={poolshark.src} className="poolshark-name" width="476px"/>
+            <img alt="Poolsharks" src={poolshark.src} className="poolshark-name" />
             <p className="slogan">Take a Bite out of Smart Contract Automation</p>
             <button onClick={() =>window.location.href="https://poolsharks-protocol.github.io/DCEX-Docs/"} 
               className="cta">View Docs</button>
           </div>
         </div>
-        <div className="col-md-4">
+        <div className="col-lg-6">
           <div className="shark">
             <img alt="shark" onLoad={changeState} src={shark.src} className="shark-img" />
           </div>
         </div>
-        <div className="col-md-4 mt-5 coins-wrapper">
+        <div className="col-lg-2 mt-5 coins-wrapper">
           <img alt="coins" src={coin3.src} className="coins coin1"/>
           <img alt="coins" src={coin2.src} className="coins coin2"/>
           <img alt="coins" src={coin1.src} className="coins coin3"/>
@@ -64,7 +64,7 @@ function Header(props) {
               </clipPath>
             </defs>
           </svg>
-  </div>
+  </>
   );
 }
 

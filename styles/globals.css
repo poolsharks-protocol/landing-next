@@ -55,12 +55,16 @@ body {
 }
 
 .slogan {
-  font-size: 18px;
+  font-size: 22px;
   text-align: right;
   font-weight: 500;
   margin-top: 53px;
   margin-bottom: 54px;
-  letter-spacing: 1.3px;
+  letter-spacing: 3px;
+}
+
+.poolshark-name {
+  width: 100%;
 }
 
 .lines {
@@ -77,8 +81,7 @@ body {
 .cta-wrapper {
   display: inline-block;
   text-align: right;
-  margin-top: 51px;
-  margin-left: -50px;
+  width: 80%;
 }
 
 .cta {
@@ -101,26 +104,26 @@ body {
 
 
 .coin1 {
-  width: 140px;
+  width: 190px;
   position: absolute;
-  right: 0;
+  right: 100px;
   top: 50px;
   animation: entering 2s 3.6s backwards, float 6s ease-in-out infinite;
   perspective: 800px;
 }
 
 .coin2 {
-  width: 140px;
+  width: 240px;
   position: absolute;
-  right: 80px;
-  top: 118px;
+  right: 210px;
+  top: 138px;
   animation: entering 2s 3s backwards, float2 8s ease-in-out infinite;
 }
 
 .coin3 {
-  width: 130px;
+  width: 190px;
   position: absolute;
-  right: 130px;
+  right: 260px;
   top: 10px;
   animation: entering 2s 3.9s backwards, float3 4s  ease-in-out infinite;
 }
@@ -174,14 +177,17 @@ body {
 .logo {
   display: block;
   margin-bottom: 47px;
+  width: 25%;
 }
 
-
+.bg {
+  background-color: green;
+}
 
 .shark-img {
-  margin-top: 180px;
-  max-width: 900px;
-  margin-left: -200px;
+  margin-top: 80px;
+  margin-left: -100px;
+  width: 120%;
   z-index: 3;
   position: relative;
   animation: fadeIn 2s 2s backwards;
@@ -238,12 +244,12 @@ body {
 
 .box-label {
   font-weight: 500;
-  font-size: 44px;
+  font-size: 75px;
   width: 100%;
   color: #27f09e;
   position: relative;
   z-index: 2;
-  line-height: 56px;
+  line-height: 66px;
 }
 .white-txt {
   color: white;
@@ -251,11 +257,11 @@ body {
 }
 
 .first-box {
-  margin-left: -60px;
+  margin-left: -180px;
 }
 
 .box-text {
-  font-size: 24px;
+  font-size: 44px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -265,9 +271,9 @@ body {
 }
 
 .pipe {
-  width: 220%;
+  width: 250%;
   margin-top: -800px;
-  margin-left: -705px;
+  margin-left: -945px;
 }
 
 .text-right {
@@ -276,6 +282,7 @@ body {
 
 .pipe-box {
   position: relative;
+  margin-top: -100px;
 }
 
 .vibrate-1 {
@@ -294,8 +301,9 @@ body {
   display: flex;
   justify-content: flex-end;
   position: absolute;
-  top: 400px;
-  right: -100px;
+  top: 620px;
+  right: -1px;
+  text-align: right;
 }
 
 .z-index {
@@ -305,8 +313,8 @@ body {
 
 .left-box {
   position: absolute;
-  top: 1350px;
-  left: -60px;
+  top: 1650px;
+  left: -180px;
 }
 
 .center-box {
@@ -315,13 +323,13 @@ body {
   display: flex;
   justify-content: flex-end;
   text-align: right;
-  right: -100px;
+  right: -166px;
 }
 
 .video {
   position: absolute;
-  bottom: 1728px;
-  left: 180px;
+  bottom: 2006px;
+  left: 79px;
 }
 
 iframe {
@@ -330,26 +338,26 @@ iframe {
 
 .first-video {
   position: absolute;
-  left: -22px;
-  top: 165px;
+  left: -153px;
+  top: 316px;
 }
 
 .second-video {
   position: absolute;
-  left: 824px;
-  top: 1024px;
+  left: 826px;
+  top: 1312px;
 }
 
 .third-video {
   position: absolute;
-  left: 37px;
-  top: 1769px;
+  left: -82px;
+  top: 2172px;
 }
 
 .fourth-video {
   position: absolute;
-  left: 905px;
-  top: 3074px;
+  left: 918px;
+  top: 3684px;
 }
 
 .coin-one {
@@ -368,7 +376,7 @@ iframe {
 .powered-wrapper {
   background-color: rgba(0, 0, 0, 0.267);
   width: 100%;
-  margin-top: 300px;
+  margin-top: 250px;
   font-size: 28px;
   font-weight: 500;
 }
@@ -378,27 +386,95 @@ iframe {
   filter: drop-shadow(0px 0px 1px rgba(255, 229, 206, .7));
 }
 
-@media only screen and (min-width: 1700px) {
-  .cta-wrapper {
-    margin-left: -250px;
-  }
-}
+
 
 @media only screen and (max-width: 1700px) {
   .shark-img {
     margin-top: 240px;
     max-width: 800px;
-    margin-left: -30px;
   }
 
   .coins {
     margin-left: -30px;
   }
+  .first-video {
+    left: -22px;
+    top: 365px;
+  }
+
+  .pipe {
+    width: 210%;
+    margin-top: -800px;
+    margin-left: -680px;
+  }
+
+  .box-label {
+    font-size: 50px;
+  }
+
+  .pipe-box {
+    margin-top: -20px;
+  }
+
+  .box-text {
+    font-size: 30px;
+  }
+
+  .first-box {
+    margin-left: -30px;
+    padding-right: 120px;
+  }
+
+  .right-box {
+    top: 420px;
+    right: -30px;
+    padding-left: 300px;
+  }
+
+  .left-box {
+    top: 1250px;
+    padding-right: 200px;
+    margin-left: 130px;
+  }
+
+  .center-box {
+    right: -30px;
+  }
+
+  .first-video {
+    left: -12px;
+    top: 126px;
+  }
+
+  .second-video {
+    left: 767px;
+    top: 976px;
+  }
+
+  .video {
+    left: 182px;
+    top: 2148px;
+  }
+
+  .third-video {
+    left: 46px;
+    top: 1698px;
+  }
+
+  .fourth-video {
+    left: 889px;
+    top: 2967px;
+  }
+
+
 }
 
 @media only screen and (max-width: 1400px) {
+  
+  
   .box-label {
     font-size: 35px;
+    line-height: 35px;
   }
 
   .box-text {
@@ -406,12 +482,14 @@ iframe {
   }
 
   .first-box {
-    margin-left: 0;
+    margin-left: -30px;
   }
 
   .right-box {
     top: 350px;
     right: -66px;
+    margin-right: -30px;
+
   }
 
   .left-box {
@@ -420,11 +498,13 @@ iframe {
 
   .center-box {
     bottom: 650px;
+    margin-right: -30px;
+
   }
 
   .video {
-    top: 1764px;
-    left: 175px;
+    top: 1820px;
+    left: 154px;
   }
 
   .powered-wrapper {
@@ -434,7 +514,7 @@ iframe {
   .pipe {
     width: 210%;
     margin-top: -720px;
-    margin-left: -550px;
+    margin-left: -587px;
   }
 
   .coin-one {
@@ -446,38 +526,52 @@ iframe {
     bottom: 500px;
   }
   .first-video {
-    top: 72px;
-    left: -7px;
+    top: 88px;
+    left: -34px;
   }
 
   .second-video {
     position: absolute;
-    left: 620px;
-    top: 777px;
+    left: 607px;
+    top: 809px;
   }
 
   .third-video {
     position: absolute;
-    left: 52px;
-    top: 1386px;
+    left: 28px;
+    top: 1432px;
   }
 
   .fourth-video {
     position: absolute;
-    left: 765px;
-    top: 2454px;
+    left: 753px;
+    top: 2525px;
   }
 
   .shark-img {
-    max-width: 600px;
-    margin-left: 50px;
+    max-width: 800px;
+    margin-left: -77px;
+    margin-top: 200px;
+  }
+  .coin1, .coin2, .coin3 {
+    width: 150px;
+  }
+
+  .coin1 {
+    right: 30px;
+  }
+
+  .coin2 {
+    right: 100px;
+  }
+
+  .coin3 {
+    right: 170px;
   }
 }
 
 @media only screen and (max-width: 1650px) {
-  .cta-wrapper {
-    margin-left: -30px;
-  }
+
 
   .coins {
     margin-left: -30px;
@@ -493,13 +587,7 @@ iframe {
 }
 
 @media only screen and (max-width: 1300px) {
-  .shark-img {
-    margin-top: 260px;
-    max-width: 598px;
-    margin-left: 100px;
-    z-index: 2;
-    position: relative;
-  }
+
 
   .first-box {
     margin-left: 0;
@@ -523,16 +611,9 @@ iframe {
     width: 100px;
   }
 
-  .poolshark-name {
-    width: 400px;
-  }
-
-  .cta-wrapper {
-    margin-left: -60px;
-    width: 400px;
-  }
   .slogan {
-    font-size: 14px;
+    text-align: left;
+    font-size: 20px;
   }
 
   .shark-img {
@@ -540,7 +621,7 @@ iframe {
   }
 
   .first-box {
-    margin-left: -70px;
+    margin-left: 50px;
   }
 
   .box-text {
@@ -558,19 +639,19 @@ iframe {
 
   .center-box {
     text-align: right;
-    width: 100%;
-    bottom: 580px;
-    margin-right: -60px;
+    width: 80%;
+    bottom: 450px;
+    margin-right: 40px;
   }
 
   .right-box {
-    top: 340px;
-    margin-right: -60px;
+    top: 240px;
+    margin-right: 30px;
   }
 
   .left-box {
-    top: 1000px;
-    margin-left: -70px;
+    top: 750px;
+    margin-left: 50px;
   }
 
   .box-label {
@@ -583,40 +664,45 @@ iframe {
   }
 
   .pipe {
-    margin-left: -570px;
-    margin-top: -610px;
-    width: 230%;
+    margin-left: -349px;
+    margin-top: -520px;
+    width: 180%;
   }
 
   .video {
-    left: 95px;
-    top: 1663px;
+    left: 184px;
+    top: 1304px;
   }
   .first-video {
-    top: 114px;
-    left: -117px;
+    top: 61px;
+    left: 0;
   }
 
   .second-video {
     position: absolute;
-    left: 502px;
-    top: 758px;
+    left: 470px;
+    top: 580px;
   }
 
   .third-video {
     position: absolute;
-    left: -10px;
-    top: 1310px;
+    left: 71px;
+    top: 1027px;
   }
 
   .fourth-video {
     position: absolute;
-    left: 640px;
-    top: 2291px;
+    left: 623px;
+    top: 1795px;
   }
 }
 
 @media only screen and (max-width: 1100px) {
+
+  .lines {
+    top: 800px;
+    height: 400px!important;
+  }
   .cta-wrapper {
     margin-left: 10px;
   }
@@ -627,37 +713,17 @@ iframe {
     display: none;
   }
 
-  .left-box {
-    top: 1000px;
-  }
-
-  .center-box {
-    bottom: 650px;
-  }
-  .right-box {
-    margin-right: 0;
-  }
-  .first-box {
-    margin-left: 0;
-  }
-  .left-box {
-    margin-left: 0;
-  }
-  .center-box {
-    margin-right: 0;
-  }
-  .shark-img {
-    margin-left: 44px;
-  }
 }
+
 
 @media only screen and (max-width: 994px) {
   .shark-img {
     display: none !important;
   }
 
-  .center-box {
+  .center-box, {
     margin: 0;
+    text-align: left;
   }
 
   .coins {
@@ -690,18 +756,24 @@ iframe {
 
   .first-box {
     margin-left: 0;
+    text-align: center;
+    padding-right: 0;
   }
 
   .right-box {
     position: static;
     width: 100%;
     margin-top: 130px;
+    padding: 0;
+    text-align: center;
   }
 
   .left-box {
     position: static;
     margin-top: 130px;
+    padding-right: 0;
     margin-left: 0;
+    text-align: center;
   }
 
   .footer {
@@ -712,15 +784,17 @@ iframe {
     position: static;
     width: 100%;
     margin-top: 130px;
+    text-align: center;
   }
 
   .cta-wrapper {
     text-align: left;
+    padding: 0 130px 0 0px;
+    width:90%;
   }
 
   .slogan {
     text-align: left;
-    width: 80%;
   }
 
   .cta {
@@ -731,7 +805,7 @@ iframe {
   }
 
   .poolshark-name {
-    margin-top: 30px;
+    margin-top: 230px;
   }
 
   .mobile-lines {
@@ -766,8 +840,14 @@ iframe {
     font-size: 20px;
   }
 
-  .poolshark-name {
-    width: 70%;
+  .cta {
+    margin-left: 0;
+  }
+
+  .cta-wrapper {
+    padding: 0;
+    width: 100%;
+    padding-right: 30px;
   }
 
   .wholeapp {
@@ -775,17 +855,18 @@ iframe {
   }
 
   .slogan {
-    width: 70%;
-    font-size: 29px;
-    margin-bottom: 200px;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 100px;
   }
 
   .wholeapp {
-    background-position: 220px;
+    background-position: 70px;
   }
 
   .box-label {
     font-size: 33px;
+    text-align: left;
   }
 
   .sm-label {
