@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
@@ -13,8 +14,18 @@ import { useState } from "react";
 import PoweredBy from "../components/PoweredBy";
 
 export default function Home() {
-  const [isLoaded, setIsLoaded] = useState(false)
-  const [isHeaderLoaded, setIsHeaderLoaded] = useState(false)
+  const [w, setW] = useState(0)  
+  const [isLoaded, setIsLoaded] = useState(true)
+  const [isHeaderLoaded, setIsHeaderLoaded] = useState(true)
+
+  useEffect(() => {
+    setW(window.innerWidth)
+  },[])
+
+  useEffect(() => {
+    setIsLoaded(w < 995 ? true : false)
+    setIsHeaderLoaded(w < 995 ? true : false)
+  },[w])
   
   return (
     <div className={styles.container}>

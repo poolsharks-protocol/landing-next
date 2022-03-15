@@ -1,7 +1,6 @@
 import poolshark from '../public/poolshark.png'
 import logo from '../public/logo.png'
 import shark from '../public/shark.png'
-import coins from '../public/coins.png'
 import lines from '../public/hero-bg.png'
 import { useEffect, useState } from 'react'
 import coin1 from '../public/coin1.png'
@@ -29,7 +28,7 @@ function Header(props) {
             <img alt="logo" src={logo.src} className="logo"/>
             <img alt="Poolsharks" src={poolshark.src} className="poolshark-name" />
             <p className="slogan">Take a Bite out of Smart Contract Automation</p>
-            <button onClick={() =>window.location.href="https://poolsharks-protocol.github.io/DCEX-Docs/"} 
+            <button onClick={() =>window.open("https://poolsharks-protocol.github.io/DCEX-Docs/", '_blank')} 
               className="cta">View Docs</button>
           </div>
         </div>

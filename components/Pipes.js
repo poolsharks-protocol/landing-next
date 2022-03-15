@@ -11,12 +11,16 @@ function Pipes(props) {
     setW(window.innerWidth)
   },[])
 
+  const loadedState = () => {
+    props.setIsLoaded(true)
+  }
+
 
 
   return (
     <>
       {props.isLoaded && w > 994 && <img alt="coin" src={coin1.src} className="coin-one" />}
-      <img alt="pipes" onLoad={()=> props.setIsLoaded(true)} src={pipe.src} className={`pipe`} />
+      <img alt="pipes" onLoad={loadedState} src={pipe.src} className={`pipe`} />
       {props.isLoaded && w > 994 && <img alt="coin" src={coin2.src} className="coin-two" />}
     </>
   );

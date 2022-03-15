@@ -37,7 +37,7 @@ function CoinVideos() {
         {w > 1699 && <CoinVideo src="https://res.cloudinary.com/werwerwer/video/upload/v1643452600/fourthvideo_vozy4h.mp4" class="fourth-video" width="466" height="230"/>}
         {w > 1399 && w < 1700 && <CoinVideo src="https://res.cloudinary.com/werwerwer/video/upload/v1643452600/fourthvideo_vozy4h.mp4" class="fourth-video" width="382" height="194"/>}
         {w > 1200 && w < 1399 && <CoinVideo src="https://res.cloudinary.com/werwerwer/video/upload/v1643452600/fourthvideo_vozy4h.mp4" class="fourth-video" width="352" height="165"/>}
-        {w > 994 && w < 1199 && <CoinVideo src="https://res.cloudinary.com/werwerwer/video/upload/v1643452600/fourthvideo_vozy4h.mp4" class="fourth-video" width="236" height="153"/>}
+        {w > 994 && w < 1199 && <CoinVideo src="https://res.cloudinary.com/werwerwer/video/upload/v1643452600/fourthvideo_vozy4h.mp4" class="fourth-video" width="236" height="150"/>}
         {w == 1200 && <CoinVideo src="https://res.cloudinary.com/werwerwer/video/upload/v1643452600/fourthvideo_vozy4h.mp4" class="fourth-video" width="274" height="153"/>}
     </div>}
     </>
