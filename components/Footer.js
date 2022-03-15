@@ -30,7 +30,12 @@ function Footer() {
         
         <div>
             <button className='btn-footer'>Request integration</button>
-            <button className='btn-footer ms-2'>Docs</button>
+            <button className='btn-footer ms-2'>
+                <a target="_blank"  rel="noreferrer" 
+                    href='https://poolsharks-protocol.github.io/DCEX-Docs/'>
+                    Docs
+                </a>
+            </button>
         </div>
         
         <div>

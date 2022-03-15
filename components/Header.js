@@ -21,7 +21,7 @@ function Header(props) {
     },[])
 
   return (
-  <>
+  <div className='header'>
       <div className="row">
         <div className="col-12 col-lg-4 d-flex align-items-end flex-column">
           <div className="cta-wrapper pe-xxl-4 pt-5 me-xxl-5">
@@ -65,7 +65,7 @@ function Header(props) {
     </svg> */}
 
 
-  </>
+  </div>
   );
 }
 
