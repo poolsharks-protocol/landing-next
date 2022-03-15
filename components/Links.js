@@ -26,7 +26,7 @@ function Links() {
             />
           </svg>
 
-          <p className="ps-2 d-none d-md-inline">Docs</p>
+          <p className=" ps-2 d-none d-md-inline">Docs</p>
         </a>
         <a
           className="px-2 pe-md-5"
@@ -50,7 +50,7 @@ function Links() {
             />
           </svg>
 
-          <p className="ps-2 d-none d-md-inline">Github</p>
+          <p className=" ps-2 d-none d-md-inline">Github</p>
         </a>
         <a
           className="px-2 pe-md-5"
@@ -72,7 +72,7 @@ function Links() {
             />
           </svg>
 
-          <p className="ps-2 d-none d-md-inline">Discord</p>
+          <p className=" ps-2 d-none d-md-inline">Discord</p>
         </a>
 
         <a
@@ -97,7 +97,7 @@ function Links() {
             />
           </svg>
 
-          <p className="ps-2 d-none d-md-inline">Twitter</p>
+          <p className=" ps-2 d-none d-md-inline">Twitter</p>
         </a>
       </div>
     </div>

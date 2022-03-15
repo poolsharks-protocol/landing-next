@@ -11,19 +11,19 @@ function PoweredBy() {
         <div className='row px-0 mt-5'>
             <div className='col-6 col-md-3 text-center d-flex align-items-center flex-column justify-content-between'>
                 <img src={graph.src} alt="The graph" width="100px"/>
-                <p>The Graph</p>
+                <p className='mt-3'>The Graph</p>
             </div>
             <div className='col-6 col-md-3 text-center d-flex align-items-center flex-column justify-content-between'>
                 <img src={gelato.src} alt="gelato" width="100px"/>
-                <p>Gelato</p>
+                <p className='mt-3'>Gelato</p>
             </div>
             <div className='col-6 col-md-3 text-center d-flex align-items-center flex-column justify-content-between'>
                 <img className='ethereum' src={ethereum.src} alt="Ethereum" width="100px"/>
-                <p>Ethereum</p>
+                <p className='mt-3'>Ethereum</p>
             </div>
             <div className='col-6 col-md-3 text-center d-flex align-items-center flex-column justify-content-between'>
                 <img className='ethereum' src={polywrap.src} alt="Polywrap" width="100px"/>
-                <p>Polywrap</p>
+                <p className='mt-3'>Polywrap</p>
             </div>
         </div>
     </div>
