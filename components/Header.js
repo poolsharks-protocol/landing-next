@@ -27,7 +27,7 @@ function Header(props) {
           <div className="cta-wrapper pe-xxl-4 pt-5 me-xxl-5">
             <img alt="logo" src={logo.src} className="logo"/>
             <img alt="Poolsharks" src={poolshark.src} className="poolshark-name" />
-            <p className="slogan">Take a Bite out of Smart Contract Automation</p>
+            <p className="slogan">Take Part in the Next Wave of DeFi Exchange</p>
             <button onClick={() =>window.open("https://poolsharks-protocol.github.io/DCEX-Docs/", '_blank')} 
               className="cta">View Docs</button>
           </div>
@@ -47,7 +47,7 @@ function Header(props) {
 
 
 
-    <svg className="burger-menu" width="46" height="35" viewBox="0 0 46 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+    {/* <svg className="burger-menu" width="46" height="35" viewBox="0 0 46 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_1263_633)">
               <rect width="45.5" height="35" rx="10.5" fill="black"/>
               <path d="M7.00049 28H38.5005V24.5H7.00049V28ZM7.00049 19.25H38.5005V15.75H7.00049V19.25ZM7.00049 7V10.5H38.5005V7H7.00049Z" fill="url(#paint0_linear_1263_633)"/>
@@ -62,7 +62,9 @@ function Header(props) {
                 <rect width="45.5" height="35" fill="white"/>
               </clipPath>
             </defs>
-          </svg>
+    </svg> */}
+
+
   </>
   );
 }

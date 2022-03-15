@@ -8,6 +8,7 @@ function BigVideo() {
       setW(window.innerWidth)
     },[])
 
+
   return (
     <>
       {w > 994 && <div className="video">

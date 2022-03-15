@@ -12,6 +12,7 @@ import Pipes from "../components/Pipes";
 import Footer from "../components/Footer";
 import { useState } from "react";
 import PoweredBy from "../components/PoweredBy";
+import Links from "../components/Links";
 
 export default function Home() {
   const [w, setW] = useState(0)  
@@ -26,7 +27,6 @@ export default function Home() {
     setIsLoaded(w < 995 ? true : false)
     setIsHeaderLoaded(w < 995 ? true : false)
   },[w])
-  
   return (
     <div className={styles.container}>
       <Head>
@@ -42,6 +42,7 @@ export default function Home() {
             }
       <div className="wholeapp">
         <div className="container-fluid">
+          <Links />
         {isLoaded &&  <Header setIsHeaderLoaded={setIsHeaderLoaded}/>}
         <PoweredBy />
           <div className="container big-margin"></div>

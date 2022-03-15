@@ -40,6 +40,18 @@ body {
   margin: 0;
 }
 
+.links-top {
+  text-align: right;
+}
+.links-top a {
+  color: #c7c7c7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white!important;
+}
+
 .links > * {
   padding: 10px;
   cursor: pointer;
@@ -75,9 +87,9 @@ body {
   font-size: 22px;
   text-align: right;
   font-weight: 500;
-  margin-top: 53px;
+  margin-top: 33px;
   margin-bottom: 54px;
-  letter-spacing: 3px;
+  letter-spacing: .4px;
 }
 
 .poolshark-name {
@@ -340,6 +352,15 @@ body {
   margin-top: 200px;
 }
 
+.powered-label {
+  background-color: #254953;
+  display: inline-block;
+  padding: 10px 30px 13px;
+  border-radius: 40px;
+  margin: 0;
+  box-shadow: inset -5px 5px 20px #447988, inset 5px -5px 10px #131d20;
+}
+
 .box-label {
   font-weight: 500;
   font-size: 75px;
@@ -411,7 +432,7 @@ body {
   -ms-flex-pack: end;
   justify-content: flex-end;
   position: absolute;
-  top: 620px;
+  top: 660px;
   right: -166px;
   text-align: right;
 }
@@ -477,7 +498,7 @@ iframe {
 .coin-one {
   position: absolute;
   right: 111px;
-  top: -400px;
+  top: -310px;
   z-index: 2;
 }
 
@@ -493,6 +514,7 @@ iframe {
   margin-top: 250px;
   font-size: 28px;
   font-weight: 500;
+  padding: 80px 0 100px;
 }
 
 
@@ -576,6 +598,7 @@ iframe {
   }
 
   .coin-one {
+    top: -400px;
     right: 180px;
   }
 }
@@ -635,7 +658,7 @@ iframe {
   }
 
   .powered-wrapper {
-    margin-top: 143px;
+    margin-top: 340px;
   }
 
   .pipe {
@@ -847,6 +870,9 @@ iframe {
 }
 
 @media only screen and (max-width: 994px) {
+  .links-top {
+    text-align: center;
+  }
   .shark-img {
     display: none !important;
   }
@@ -947,7 +973,7 @@ iframe {
     width: 100vh;
     left: 300px;
     z-index: 0;
-    opacity: 0.8;
+    opacity: .4;
   }
 
   .wholeapp {
