@@ -23,10 +23,10 @@ export default function Home() {
     setW(window.innerWidth)
   },[])
 
-  useEffect(() => {
-    setIsLoaded(w < 995 ? true : false)
-    setIsHeaderLoaded(w < 995 ? true : false)
-  },[w])
+  // useEffect(() => {
+  //   setIsLoaded(w < 995 ? true : false)
+  //   setIsHeaderLoaded(w < 995 ? true : false)
+  // },[w])
   return (
     <div className={styles.container}>
       <Head>
@@ -52,8 +52,8 @@ export default function Home() {
               <Pipes isLoaded={isLoaded} setIsLoaded={setIsLoaded}/>
               {isLoaded &&
               <>
-              <BigVideo />
-              <CoinVideos />
+              {/* <BigVideo />
+              <CoinVideos /> */}
               <SecondBox />
               <ThirdBox />
               <LastBox />

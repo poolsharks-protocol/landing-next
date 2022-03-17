@@ -382,9 +382,7 @@ a:hover {
   margin-bottom: 0;
 }
 
-.first-box {
-  margin-left: -180px;
-}
+
 
 .box-text {
   font-size: 44px;
@@ -406,8 +404,8 @@ a:hover {
 
 .pipe {
   width: 250%;
-  margin-top: -800px;
-  margin-left: -945px;
+  margin-top: -900px;
+  margin-left: -845px;
 }
 
 .text-right {
@@ -415,8 +413,11 @@ a:hover {
 }
 
 .pipe-box {
+  width: 230%;
+  height: 6000px;
   position: relative;
-  margin-top: -100px;
+  margin-left: -830px;
+  
 }
 
 .vibrate-1 {
@@ -431,6 +432,10 @@ a:hover {
   padding-top: 300px;
 }
 
+.first-box {
+  margin-left: -120px;
+}
+
 .right-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -439,8 +444,9 @@ a:hover {
   -ms-flex-pack: end;
   justify-content: flex-end;
   position: absolute;
-  top: 660px;
-  right: -166px;
+  top: 1430px;
+  width: 50%;
+  right: 770px;
   text-align: right;
 }
 
@@ -451,21 +457,17 @@ a:hover {
 
 .left-box {
   position: absolute;
-  top: 1650px;
-  left: -180px;
+  top: 2390px;
+  margin-left: 700px;
+  width: 50%;
 }
 
 .center-box {
   position: absolute;
-  bottom: 800px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
   text-align: right;
-  right: -166px;
+  bottom: 800px;
+  right: 270px;
+  width: 50%;
 }
 
 .video {
@@ -527,21 +529,14 @@ iframe {
 
 
 @media only screen and (max-width: 1700px) {
-  /* .shark-img {
-    margin-top: 200px;
-    max-width: 1100px;
-  } */
-
 
   .first-video {
     left: -22px;
     top: 365px;
   }
 
-  .pipe {
-    width: 210%;
-    margin-top: -800px;
-    margin-left: -680px;
+  .pipe-box {
+    margin-left: -800px;
   }
 
   .box-label {
@@ -557,24 +552,19 @@ iframe {
   }
 
   .first-box {
-    margin-left: -30px;
+    margin-left: -80px;
     padding-right: 120px;
   }
 
   .right-box {
-    top: 420px;
-    right: -30px;
-    padding-left: 300px;
+    top: 1420px;
+    right: 780px;
+    padding-left: 500px;
   }
 
   .left-box {
-    top: 1250px;
+    top: 2400px;
     padding-right: 200px;
-    margin-left: 130px;
-  }
-
-  .center-box {
-    right: -30px;
   }
 
   .first-video {
@@ -625,12 +615,8 @@ iframe {
     margin-left: -30px;
   }
 
-  .right-box {
-    right: 0;
-  }
-
   .center-box {
-    right: 0;
+    bottom: 1000px;
   }
 
   .coin-one {
@@ -646,25 +632,32 @@ iframe {
     font-size: 25px;
   }
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1545px) {
 
+  .pipe-box {
+    width: 200%;
+    margin-left:-630px;
+  }
 
   .first-box {
-    margin-left: -30px;
+    margin-left: -10px;
+    position: absolute;
+    padding-right: 170px;
+    top: 2000px;
   }
 
   .right-box {
-    top: 350px;
-    right: 0px;
-    margin-right: -30px;
+    top: 1450px;
+    margin-right: -110px;
   }
 
   .left-box {
-    top: 1030px;
+    top: 2430px;
+    margin-left: 600px;
   }
 
   .center-box {
-    bottom: 650px;
+    bottom: 980px;
     margin-right: -30px;
   }
 
@@ -693,14 +686,14 @@ iframe {
     bottom: 500px;
   }
   .first-video {
-    top: 88px;
-    left: -34px;
+    top: 988px;
+    left: 650px;
   }
 
   .second-video {
     position: absolute;
     left: 607px;
-    top: 809px;
+    top: 1209px;
   }
 
   .third-video {
@@ -739,15 +732,48 @@ iframe {
   }
 }
 
-
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1400px) {
+  .pipe-box {
+    width: 210%;
+    height: 5000px;
+    margin-left: -570px;
+  }
   .first-box {
-    margin-left: 0;
+    top: 1800px;
+  }
+
+  .right-box {
+    top: 1250px;
+    margin-right: -170px;
   }
 
   .left-box {
-    left: 0;
+    left: 550px;
+    top: 2000px;
     margin-left: 0;
+  }
+
+  .center-box {
+    bottom: 800px;
+    margin-right: -60px;
+  }
+}
+
+
+@media only screen and (max-width: 1300px) {
+  .pipe-box {
+    margin-top: 300px;
+    width: 200%;
+    height: 5000px;
+    margin-left: -530px;
+  }
+  .first-box {
+    top: 1800px;
+  }
+
+  .right-box {
+    top: 1180px;
+    margin-right: -200px;
   }
 
   .coins {
@@ -760,6 +786,13 @@ iframe {
 }
 
 @media only screen and (max-width: 1200px) {
+
+  .pipe-box {
+    margin-top: 300px;
+    width: 200%;
+    height: 4000px;
+    margin-left: -470px;
+  }
   .logo {
     width: 100px;
   }
@@ -824,24 +857,25 @@ iframe {
   }
 
   .first-box {
-    margin-left: 50px;
-    padding-right: 140px;
-    margin-bottom: 40px;
+    margin-left: -20px;
+    top: 1850px;
   }
   .right-box {
     margin-right: 30px;
-    top: 240px;
+    top: 940px;
+    right: 450px;
+    padding-left: 0;
   }
   .left-box {
-    margin-left: 50px;
-    top: 750px;
+    top: 1600px;
+    left: 450px;
   }
 
   .center-box {
     text-align: right;
-    width: 80%;
-    bottom: 450px;
-    margin-right: 30px;
+    bottom: 650px;
+    margin-right: 0px;
+    right: 180px;
   }
 
   .first-video {
@@ -883,6 +917,7 @@ iframe {
   .burger-menu {
     display: none;
   }
+
 }
 
 @media only screen and (max-width: 994px) {
