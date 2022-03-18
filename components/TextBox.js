@@ -14,7 +14,7 @@ function TextBox() {
           Welcome to the Oceanbook <br />
           <span className="white-txt">A New Breed of Orderbook</span>
         </p>
-        <div className="box-text mt-5">
+        <div className="box-text mt-5 first-text">
           <p>
           Oceanbook provides an order-matching system for everyone.
           

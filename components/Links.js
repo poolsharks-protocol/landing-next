@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 function Links() {
   return (
     <div>
-      <div className="links-top pt-3 ">
+      <div className="links-top pt-3 pe-0 pe-md-5 me-0 me-md-4">
         <a
           className="px-2 pe-md-5"
           href="https://poolsharks-protocol.github.io/DCEX-Docs/"

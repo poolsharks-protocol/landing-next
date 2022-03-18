@@ -15,18 +15,8 @@ import PoweredBy from "../components/PoweredBy";
 import Links from "../components/Links";
 
 export default function Home() {
-  const [w, setW] = useState(0)  
-  const [isLoaded, setIsLoaded] = useState(true)
-  const [isHeaderLoaded, setIsHeaderLoaded] = useState(true)
+  const [w, setW] = useState(0);
 
-  useEffect(() => {
-    setW(window.innerWidth)
-  },[])
-
-  // useEffect(() => {
-  //   setIsLoaded(w < 995 ? true : false)
-  //   setIsHeaderLoaded(w < 995 ? true : false)
-  // },[w])
   return (
     <div className={styles.container}>
       <Head>
@@ -35,34 +25,26 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-            {!isHeaderLoaded && 
-            <div className="vibrate-1">
-              <h1 className="text-center">Loading...</h1>
-            </div>
-            }
+
       <div className="wholeapp">
         <div className="container-fluid">
           <Links />
-        {isLoaded &&  <Header setIsHeaderLoaded={setIsHeaderLoaded}/>}
-        <PoweredBy />
+          <Header />
+          <PoweredBy />
           <div className="container big-margin"></div>
           <div className="container">
-            {isLoaded && <TextBox />}
+            <TextBox />
             <div className="pipe-box ">
-              <Pipes isLoaded={isLoaded} setIsLoaded={setIsLoaded}/>
-              {isLoaded &&
-              <>
-              {/* <BigVideo />
-              <CoinVideos /> */}
+              <Pipes />
+              <BigVideo />
+              <CoinVideos />
               <SecondBox />
               <ThirdBox />
               <LastBox />
-              </>
-              }
             </div>
           </div>
         </div>
-        {isLoaded && <Footer />}
+        <Footer />
       </div>
     </div>
   );
