@@ -13,9 +13,6 @@ function Pipes() {
   },[])
 
 
-
-
-
   return (
     <>
       {w > 994 && <img alt="coin" src={coin1.src} className="coin-one" />}

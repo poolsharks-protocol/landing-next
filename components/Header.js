@@ -14,7 +14,7 @@ function Header() {
       <div className="row">
         <div className="col-12 col-lg-4 d-flex align-items-end flex-column">
           <div className="cta-wrapper pe-xxl-4 pt-5 me-xxl-5">
-            <img alt="logo" src={logo.src} className="logo"/>
+            <img alt="logo" src={logo.src} className="logo d-block d-md-none"/>
             <img alt="Poolsharks" src={poolshark.src} className="poolshark-name" />
             <p className="slogan">Take Part in the Next Wave of DeFi Exchange</p>
             <button onClick={() =>window.open("https://poolsharks-protocol.github.io/DCEX-Docs/", '_blank')} 

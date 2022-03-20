@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react";
+import logo from '../public/logo.png'
 
 function Links() {
   return (
     <div>
-      <div className="links-top pt-3 pe-0 pe-md-5 me-0 me-md-4">
+      <div className="links-top pt-3 justify-content-center justify-content-md-between">
+      <img className='links-top-logo d-none d-md-block' alt="logo" height="60px"  src={logo.src} />
+      <div className='links-top-links'>
         <a
           className="px-2 pe-md-5"
           href="https://poolsharks-protocol.github.io/DCEX-Docs/"
@@ -99,6 +101,7 @@ function Links() {
 
           <p className=" ps-2 d-none d-md-inline">Twitter</p>
         </a>
+        </div>
       </div>
     </div>
   );

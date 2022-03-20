@@ -46,12 +46,23 @@ body {
   margin: 0;
 }
 
+.links-top-logo {
+  margin-left: 60px;
+}
+
 .links-top {
-  text-align: right;
+  margin-right: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .links-top a {
   color: #c7c7c7;
   text-decoration: none;
+}
+.links-top-links {
+  display: inline-block;
+  text-align: right;
 }
 
 a:hover {
@@ -90,12 +101,11 @@ a:hover {
 }
 
 .slogan {
-  font-size: 22px;
+  font-size: 20px;
   text-align: right;
   font-weight: 500;
   margin-top: 33px;
   margin-bottom: 33px;
-  letter-spacing: .4px;
 }
 
 .poolshark-name {
@@ -126,7 +136,7 @@ a:hover {
   outline: none;
   border: none;
   font-size: 27px;
-  font-weight: 700;
+  font-weight: 500;
   border-radius: 8px;
   -webkit-box-shadow: 0 0 8px 0 #ced8f7;
   box-shadow: 0 0 8px 0 #ced8f7;
@@ -289,9 +299,6 @@ a:hover {
   width: 25%;
 }
 
-.bg {
-  background-color: green;
-}
 
 .shark-img {
   margin-top: 80px;
@@ -523,7 +530,8 @@ iframe {
 .powered-wrapper {
   background-color: rgba(0, 0, 0, 0.267);
   width: 100%;
-  margin-top: 250px;
+  margin-top: 200px;
+  margin-bottom: 300px;
   font-size: 28px;
   font-weight: 500;
   padding: 80px 0 100px;
@@ -532,10 +540,12 @@ iframe {
 
 
 @media only screen and (max-width: 1700px) {
+  .links-top-logo {
+    margin-left: 50px;
+  }
 
-  .first-video {
-    left: -22px;
-    top: 365px;
+  .slogan {
+    font-size: 16px;
   }
 
   .pipe-box {
@@ -589,6 +599,12 @@ iframe {
     top: 2896px;
   }
 
+  .fourth-video {
+    position: absolute;
+    left:1757px;
+    top: 4368px;
+    width: 426px;
+  }
 
   .coin1, .coin2, .coin3 {
     width: 120px;
@@ -600,6 +616,7 @@ iframe {
   .coin2 {
     top: 100px;
   }
+
 }
 
 
@@ -620,8 +637,30 @@ iframe {
   .box-text {
     font-size: 25px;
   }
+  .first-box {
+    margin-left: -80px;
+    padding-right: 120px;
+  }
+
+  .right-box {
+    right: 800px;
+  }
+
+  .left-box {
+    margin-left: 800px;
+  }
+  .center-box {
+    margin-right: 40px;
+  }
+
 }
 @media only screen and (max-width: 1545px) {
+  .links-top-logo {
+    margin-left: 30px;
+  }
+  .links-top {
+    margin-right: 0;
+  }
 
   .pipe-box {
     width: 200%;
@@ -731,6 +770,9 @@ iframe {
 }
 
 @media only screen and (max-width: 1400px) {
+  .links-top-logo {
+    margin-left: 70px;
+  }
   .pipe-box {
     width: 210%;
     height: 5000px;
@@ -808,6 +850,13 @@ iframe {
 
 
 @media only screen and (max-width: 1300px) {
+  .slogan {
+    font-size: 15px;
+  }
+
+  .cta-wrapper {
+    width: 84%;
+  }
   .pipe-box {
     margin-top: 300px;
     width: 200%;
@@ -981,7 +1030,6 @@ iframe {
     top: 1931px;
   }
   .fourth-video {
-    background-color: green;
     position: absolute;
     left:1078px;
     top: 2912px;
@@ -995,7 +1043,6 @@ iframe {
     left:593px;
     width: 660px;
     height: 416px;
-    background-color: green;
   }
 }
 
@@ -1223,7 +1270,7 @@ iframe {
 @media only screen and (max-width: 400px) {
   .poolshark-name {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .wholeapp {
@@ -1244,5 +1291,11 @@ iframe {
     width: 100%;
     font-size: 25px;
     line-height: normal;
+  }
+  .powered-wrapper {
+    margin: 0;
+  }
+  .footer > * {
+    margin: 10px 0;
   }
 }
