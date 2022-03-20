@@ -16,7 +16,8 @@
     "aws-amplify": "^3.4.3",
     "@aws-amplify/ui-react": "^1.2.1",
     "amplify-provider-awscloudformation": "5.9.11",
-    "amplify-frontend-javascript": "3.3.23"
+    "amplify-frontend-javascript": "3.3.23",
+    "sharp": "0.30.3"
   },
   "devDependencies": {
     "@aws-amplify/cli": "^7.6.0",
