@@ -11,7 +11,7 @@ function PoweredBy() {
         <div className='row mt-5'>
         <div className='col-12 col-md-6 col-xl-6 col-xxl-3 mt-5'>
                 <div className='powered-item'>
-                    <img className='powered-icon' src={ethereum.src} alt="Ethereum" width="90px"/>
+                    <img className='powered-icon' src={ethereum.src} alt="Ethereum" width="100px"/>
                     <p className='mt-3 powered-headline'>Ethereum</p>
                     <p className='mt-3 powered-txt'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
@@ -19,7 +19,7 @@ function PoweredBy() {
             </div>
             <div className='col-12 col-md-6 col-xl-6 col-xxl-3 mt-5'>
                 <div className='powered-item'>
-                    <img className='powered-icon' src={graph.src} alt="The graph" width="90px"/>
+                    <img className='powered-icon' src={graph.src} alt="The graph" width="100px"/>
                     <p className='mt-3 powered-headline'>The Graph</p>
                     <p className='mt-3 powered-txt'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
@@ -27,7 +27,7 @@ function PoweredBy() {
             </div>
             <div className='col-12 col-md-6 col-xl-6 col-xxl-3 mt-5'>
                 <div className='powered-item'>
-                    <img className='powered-icon' src={polywrap.src} alt="Polywrap" width="90px"/>
+                    <img className='powered-icon' src={polywrap.src} alt="Polywrap" width="100px"/>
                     <p className='mt-3 powered-headline'>Polywrap</p>
                     <p className='mt-3 powered-txt'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
@@ -35,7 +35,7 @@ function PoweredBy() {
             </div>
             <div className='col-12 col-md-6 col-xl-6 col-xxl-3 mt-5'>
                 <div className='powered-item'>
-                    <img className='powered-icon' src={gelato.src} alt="gelato" width="90px"/>
+                    <img className='powered-icon' src={gelato.src} alt="gelato" width="100px"/>
                     <p className='mt-3 powered-headline'>Gelato</p>
                     <p className='mt-3 powered-txt'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>

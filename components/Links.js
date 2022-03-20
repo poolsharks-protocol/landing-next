@@ -8,7 +8,7 @@ function Links() {
       <img className='links-top-logo d-none d-md-block' alt="logo" height="60px"  src={logo.src} />
       <div className='links-top-links'>
         <a
-          className="px-2 pe-md-5"
+          className="px-1 pe-md-3"
           href="https://poolsharks-protocol.github.io/DCEX-Docs/"
           target="_blank"
           rel="noreferrer"
@@ -32,7 +32,7 @@ function Links() {
           <p className="link-label ps-2 d-none d-md-inline">Docs</p>
         </a>
         <a
-          className="px-2 pe-md-5"
+          className="px-1 pe-md-3"
           href="https://github.com/poolsharks-protocol"
           target="_blank"
           rel="noreferrer"
@@ -56,7 +56,7 @@ function Links() {
           <p className="link-label ps-2 d-none d-md-inline">Github</p>
         </a>
         <a
-          className="px-2 pe-md-5"
+          className="px-1 pe-md-3"
           href="https://discord.gg/cUPdThWT"
           target="_blank"
           rel="noreferrer"
@@ -79,7 +79,7 @@ function Links() {
         </a>
 
         <a
-          className="px-2 pe-md-5"
+          className="px-1 pe-md-3"
           href="https://twitter.com/poolsharks_defi"
           target="_blank"
           rel="noreferrer"
