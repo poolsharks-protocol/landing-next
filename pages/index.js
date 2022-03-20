@@ -33,8 +33,8 @@ export default function Home() {
           <PoweredBy />
           <div className="container big-margin"></div>
           <div className="container">
-            <TextBox />
             <div className="pipe-box ">
+              <TextBox />
               <Pipes />
               <BigVideo />
               <CoinVideos />

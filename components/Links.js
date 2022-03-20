@@ -1,6 +1,7 @@
 import logo from '../public/logo.png'
 
 function Links() {
+  
   return (
     <div>
       <div className="links-top pt-3 justify-content-center justify-content-md-between">
@@ -14,7 +15,7 @@ function Links() {
         >
           <svg
             className="icons-top"
-            width="30"
+            width="20"
             height="30"
             viewBox="0 0 30 30"
             fill="none"
@@ -28,7 +29,7 @@ function Links() {
             />
           </svg>
 
-          <p className=" ps-2 d-none d-md-inline">Docs</p>
+          <p className="link-label ps-2 d-none d-md-inline">Docs</p>
         </a>
         <a
           className="px-2 pe-md-5"
@@ -38,7 +39,7 @@ function Links() {
         >
           <svg
             className="icons-top"
-            width="30"
+            width="20"
             height="30"
             viewBox="0 0 30 30"
             fill="none"
@@ -52,7 +53,7 @@ function Links() {
             />
           </svg>
 
-          <p className=" ps-2 d-none d-md-inline">Github</p>
+          <p className="link-label ps-2 d-none d-md-inline">Github</p>
         </a>
         <a
           className="px-2 pe-md-5"
@@ -62,7 +63,7 @@ function Links() {
         >
           <svg
             className="icons-top"
-            width="30"
+            width="20"
             height="34"
             viewBox="0 0 30 34"
             fill="none"
@@ -74,7 +75,7 @@ function Links() {
             />
           </svg>
 
-          <p className=" ps-2 d-none d-md-inline">Discord</p>
+          <p className="link-label ps-2 d-none d-md-inline">Discord</p>
         </a>
 
         <a
@@ -85,7 +86,7 @@ function Links() {
         >
           <svg
             className="icons-top"
-            width="30"
+            width="20"
             height="30"
             viewBox="0 0 30 30"
             fill="none"
@@ -99,7 +100,7 @@ function Links() {
             />
           </svg>
 
-          <p className=" ps-2 d-none d-md-inline">Twitter</p>
+          <p className="link-label ps-2 d-none d-md-inline">Twitter</p>
         </a>
         </div>
       </div>

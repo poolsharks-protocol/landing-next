@@ -47,7 +47,7 @@ body {
 }
 
 .links-top-logo {
-  margin-left: 60px;
+  margin-left: 70px;
 }
 
 .links-top {
@@ -60,11 +60,16 @@ body {
   color: #c7c7c7;
   text-decoration: none;
 }
+
 .links-top-links {
   display: inline-block;
   text-align: right;
 }
 
+.link-label {
+  font-size: 13px;
+  margin: 0;
+}
 a:hover {
   color: white!important;
 }
@@ -79,7 +84,7 @@ a:hover {
   border-radius: 8px;
   border: none;
   color: white;
-  font-size: 14px;
+  font-size: 17px;
   padding: 3px 9px;
   -webkit-box-shadow: 0px 0px 7px 0 #0071d9;
   box-shadow: 0px 0px 7px 0 #0071d9;
@@ -367,19 +372,49 @@ a:hover {
   margin-top: 200px;
 }
 
+.powered-wrapper {
+  margin-top: 10px;
+  margin-bottom: 600px;
+  font-size: 28px;
+  font-weight: 500;
+  padding: 80px 90px 100px;
+}
+
+.powered-icon {
+  border-radius: 100px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+
+.powered-headline {
+  font-size: 34px;
+}
+
+.powered-txt {
+  font-size: 20px;
+}
+
+.powered-item {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0px 20px;
+  border: 4px solid white;
+  border-radius: 20px;
+  margin: 0px 40px;
+}
+
 .powered-label {
-  background-color: #254953;
   display: inline-block;
   padding: 10px 30px 13px;
   border-radius: 40px;
   margin: 0;
-  box-shadow: inset -5px 5px 20px #447988, inset 5px -5px 10px #131d20;
-
+  border: 4px solid white;
 }
 
 .box-label {
   font-weight: 500;
-  font-size: 75px;
+  font-size: 55px;
   width: 100%;
   color: #27f09e;
   position: relative;
@@ -394,7 +429,7 @@ a:hover {
 
 
 .box-text {
-  font-size: 44px;
+  font-size: 33px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -431,7 +466,10 @@ a:hover {
 
 
 .first-box {
-  margin-left: -120px;
+  position: absolute;
+  top: 590px;
+  margin-left: 700px;
+  width: 45%;
 }
 
 .right-box {
@@ -527,19 +565,14 @@ iframe {
   bottom: 650px;
 }
 
-.powered-wrapper {
-  background-color: rgba(0, 0, 0, 0.267);
-  width: 100%;
-  margin-top: 200px;
-  margin-bottom: 300px;
-  font-size: 28px;
-  font-weight: 500;
-  padding: 80px 0 100px;
-}
+
 
 
 
 @media only screen and (max-width: 1700px) {
+  .powered-item {
+    margin: 0px 10px;
+  }
   .links-top-logo {
     margin-left: 50px;
   }
@@ -565,8 +598,7 @@ iframe {
   }
 
   .first-box {
-    margin-left: -80px;
-    padding-right: 120px;
+    padding-right: 200px;
   }
 
   .right-box {
@@ -638,8 +670,7 @@ iframe {
     font-size: 25px;
   }
   .first-box {
-    margin-left: -80px;
-    padding-right: 120px;
+    margin-left: 760px;
   }
 
   .right-box {
@@ -647,7 +678,7 @@ iframe {
   }
 
   .left-box {
-    margin-left: 800px;
+    margin-left: 760px;
   }
   .center-box {
     margin-right: 40px;
@@ -655,6 +686,7 @@ iframe {
 
 }
 @media only screen and (max-width: 1545px) {
+
   .links-top-logo {
     margin-left: 30px;
   }
@@ -668,10 +700,7 @@ iframe {
   }
 
   .first-box {
-    margin-left: -10px;
-    position: absolute;
-    padding-right: 190px;
-    top: 2000px;
+    margin-left: 600px;
   }
 
   .right-box {
@@ -698,7 +727,12 @@ iframe {
   }
 
   .powered-wrapper {
-    margin-top: 340px;
+    margin-top: 140px;
+    margin-bottom: 300px;
+  }
+
+  .powered-icon {
+    width: 70px;
   }
 
   .pipe {
@@ -780,8 +814,13 @@ iframe {
     margin-top: 400px;
   }
 
+  .powered-icon {
+    width: 90px;
+  } 
+
   .first-box {
-    top: 1950px;
+    left: 550px;
+    margin-left: 0;
   }
 
   .right-box {
@@ -845,7 +884,6 @@ iframe {
     width: 825px;
     height: 520px;
   }
-
 }
 
 
@@ -863,9 +901,7 @@ iframe {
     height: 5000px;
     margin-left: -530px;
   }
-  .first-box {
-    top: 1800px;
-  }
+
 
   .right-box {
     top: 1180px;
@@ -989,14 +1025,14 @@ iframe {
   }
 
   .first-box {
-    margin-left: -20px;
-    top: 1850px;
+    left: 450px;
+    top: 400px;
   }
   .right-box {
     margin-right: 30px;
     top: 940px;
     right: 450px;
-    padding-left: 0;
+    padding-left: 200px;
   }
   .left-box {
     top: 1600px;
@@ -1203,12 +1239,16 @@ iframe {
     right: 50px;
     cursor: pointer;
   }
+  .powered-wrapper {
+    margin: 120px 0;
+  }
 }
 
 @media only screen and (max-width: 565px) {
   .powered-wrapper {
-    margin-top: 100px;
+    margin-top: 120px;
     font-size: 20px;
+    padding: 10px;
   }
 
   .cta {
@@ -1292,9 +1332,7 @@ iframe {
     font-size: 25px;
     line-height: normal;
   }
-  .powered-wrapper {
-    margin: 0;
-  }
+
   .footer > * {
     margin: 10px 0;
   }

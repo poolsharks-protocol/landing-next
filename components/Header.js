@@ -3,7 +3,7 @@ import logo from '../public/logo.png'
 import shark from '../public/shark.png'
 import lines from '../public/hero-bg.png'
 import coin1 from '../public/coin1.png'
-import coin2 from '../public/coin2.svg'
+import coin2 from '../public/coin2.png'
 import coin3 from '../public/coin3.png'
 
 function Header() {
