@@ -1,6 +1,6 @@
 import pipe from "../public/pipe.webp";
 import coin1 from "../public/coin1.png";
-import coin2 from "../public/coin2.svg";
+import coin2 from "../public/coin2.png";
 import {useEffect, useState} from 'react'
 import Image from "next/image";
 
@@ -11,9 +11,6 @@ function Pipes() {
   useEffect(() => {
     setW(window.innerWidth)
   },[])
-
-
-
 
 
   return (

@@ -4,16 +4,15 @@
 * Autoprefixer: v10.3.1
 * Browsers: last 4 version
 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700&family=Sora:wght@100;300;400;500;600;700&display=swap');
 
 a {
   color: white!important;
   text-decoration: none!important
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Sora:wght@400;500;700&display=swap');
-
 body {
-  background: black !important;
+  background: #0c0c0c !important;
   color: white !important;
   font-family: 'Roboto', sans-serif;
   font-family: 'Sora', sans-serif!important;
@@ -46,14 +45,31 @@ body {
   margin: 0;
 }
 
+.links-top-logo {
+  margin-left: 70px;
+}
+
 .links-top {
-  text-align: right;
+  margin-right: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .links-top a {
   color: #c7c7c7;
   text-decoration: none;
 }
 
+.links-top-links {
+  display: inline-block;
+  text-align: right;
+}
+
+.link-label {
+  font-size: 12px;
+  margin: 0;
+  font-weight: thin;
+}
 a:hover {
   color: white!important;
 }
@@ -68,7 +84,7 @@ a:hover {
   border-radius: 8px;
   border: none;
   color: white;
-  font-size: 14px;
+  font-size: 17px;
   padding: 3px 9px;
   -webkit-box-shadow: 0px 0px 7px 0 #0071d9;
   box-shadow: 0px 0px 7px 0 #0071d9;
@@ -90,12 +106,12 @@ a:hover {
 }
 
 .slogan {
-  font-size: 22px;
+  font-size: 20px;
   text-align: right;
   font-weight: 500;
   margin-top: 33px;
   margin-bottom: 33px;
-  letter-spacing: .4px;
+  letter-spacing: 1.7px;
 }
 
 .poolshark-name {
@@ -125,8 +141,7 @@ a:hover {
   background: white;
   outline: none;
   border: none;
-  font-size: 27px;
-  font-weight: 700;
+  font-size: 25px;
   border-radius: 8px;
   -webkit-box-shadow: 0 0 8px 0 #ced8f7;
   box-shadow: 0 0 8px 0 #ced8f7;
@@ -134,6 +149,8 @@ a:hover {
   position: relative;
   z-index: 10;
   padding: 1px 15px;
+  font-family: 'Montserrat', sans-serif!important;
+  font-weight: 600;
 }
 
 .coins-wrapper {
@@ -141,7 +158,6 @@ a:hover {
 }
 
 .coin1 {
-  width: 180px;
   position: absolute;
   right: 100px;
   top: 50px;
@@ -152,7 +168,6 @@ a:hover {
 }
 
 .coin2 {
-  width: 190px;
   position: absolute;
   right: 210px;
   top: 138px;
@@ -161,7 +176,6 @@ a:hover {
 }
 
 .coin3 {
-  width: 150px;
   position: absolute;
   right: 260px;
   top: 10px;
@@ -289,14 +303,11 @@ a:hover {
   width: 25%;
 }
 
-.bg {
-  background-color: green;
-}
 
 .shark-img {
-  margin-top: 80px;
+  margin-top: 50px;
   margin-left: -100px;
-  width: 120%;
+  width: 130%;
   z-index: 3;
   position: relative;
   animation: fadeIn 2s  backwards;
@@ -360,24 +371,59 @@ a:hover {
   margin-top: 200px;
 }
 
+.powered-wrapper {
+  margin-top: 10px;
+  margin-bottom: 600px;
+  font-size: 28px;
+  font-weight: 500;
+  padding: 80px 90px 100px;
+}
+
+.powered-icon {
+  border-radius: 100px;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+}
+
+.powered-headline {
+  font-size: 35px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.powered-txt {
+  text-align: left;
+  font-size: 18px;
+}
+
+.powered-item {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0px 20px;
+  border: 6px solid white;
+  border-radius: 37px;
+  margin: 0px 40px;
+}
+
 .powered-label {
-  background-color: #254953;
   display: inline-block;
-  padding: 10px 30px 13px;
+  padding: 8px 20px;
   border-radius: 40px;
   margin: 0;
-  box-shadow: inset -5px 5px 20px #447988, inset 5px -5px 10px #131d20;
-
+  border: 4px solid white;
 }
 
 .box-label {
-  font-weight: 500;
-  font-size: 75px;
+  font-weight: 700;
+  font-size: 55px;
   width: 100%;
   color: #27f09e;
   position: relative;
   z-index: 2;
   line-height: 66px;
+  margin-bottom: 70px;
+  font-family: 'Montserrat', sans-serif!important;
 }
 .white-txt {
   color: white;
@@ -387,7 +433,7 @@ a:hover {
 
 
 .box-text {
-  font-size: 44px;
+  font-size: 33px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -424,7 +470,10 @@ a:hover {
 
 
 .first-box {
-  margin-left: -120px;
+  position: absolute;
+  top: 590px;
+  margin-left: 700px;
+  width: 45%;
 }
 
 .right-box {
@@ -436,7 +485,7 @@ a:hover {
   justify-content: flex-end;
   position: absolute;
   top: 1430px;
-  width: 50%;
+  width: 55%;
   right: 770px;
   text-align: right;
 }
@@ -450,15 +499,15 @@ a:hover {
   position: absolute;
   top: 2390px;
   margin-left: 700px;
-  width: 50%;
+  width: 55%;
 }
 
 .center-box {
   position: absolute;
   text-align: right;
-  bottom: 800px;
-  right: 270px;
-  width: 50%;
+  bottom: 880px;
+  right: 330px;
+  width: 45%;
 }
 
 .video {
@@ -516,26 +565,24 @@ iframe {
 
 .coin-two {
   position: absolute;
-  left: 1200px;
-  bottom: 650px;
+  left: 1240px;
+  bottom: 700px;
 }
 
-.powered-wrapper {
-  background-color: rgba(0, 0, 0, 0.267);
-  width: 100%;
-  margin-top: 250px;
-  font-size: 28px;
-  font-weight: 500;
-  padding: 80px 0 100px;
-}
+
 
 
 
 @media only screen and (max-width: 1700px) {
+  .powered-item {
+    margin: 0px 10px;
+  }
+  .links-top-logo {
+    margin-left: 50px;
+  }
 
-  .first-video {
-    left: -22px;
-    top: 365px;
+  .slogan {
+    font-size: 16px;
   }
 
   .pipe-box {
@@ -555,8 +602,7 @@ iframe {
   }
 
   .first-box {
-    margin-left: -80px;
-    padding-right: 120px;
+    padding-right: 200px;
   }
 
   .right-box {
@@ -589,9 +635,15 @@ iframe {
     top: 2896px;
   }
 
+  .fourth-video {
+    position: absolute;
+    left:1757px;
+    top: 4368px;
+    width: 426px;
+  }
 
   .coin1, .coin2, .coin3 {
-    width: 120px;
+    width: 140px;
   }
   .coin3 {
     right: 220px;
@@ -600,6 +652,7 @@ iframe {
   .coin2 {
     top: 100px;
   }
+
 }
 
 
@@ -620,8 +673,30 @@ iframe {
   .box-text {
     font-size: 25px;
   }
+  .first-box {
+    margin-left: 760px;
+  }
+
+  .right-box {
+    right: 800px;
+  }
+
+  .left-box {
+    margin-left: 760px;
+  }
+  .center-box {
+    margin-right: 40px;
+  }
+
 }
 @media only screen and (max-width: 1545px) {
+
+  .links-top-logo {
+    margin-left: 30px;
+  }
+  .links-top {
+    margin-right: 0;
+  }
 
   .pipe-box {
     width: 200%;
@@ -629,10 +704,7 @@ iframe {
   }
 
   .first-box {
-    margin-left: -10px;
-    position: absolute;
-    padding-right: 190px;
-    top: 2000px;
+    margin-left: 600px;
   }
 
   .right-box {
@@ -659,7 +731,12 @@ iframe {
   }
 
   .powered-wrapper {
-    margin-top: 340px;
+    margin-top: 140px;
+    margin-bottom: 300px;
+  }
+
+  .powered-icon {
+    width: 70px;
   }
 
   .pipe {
@@ -731,6 +808,9 @@ iframe {
 }
 
 @media only screen and (max-width: 1400px) {
+  .links-top-logo {
+    margin-left: 70px;
+  }
   .pipe-box {
     width: 210%;
     height: 5000px;
@@ -738,8 +818,13 @@ iframe {
     margin-top: 400px;
   }
 
+  .powered-icon {
+    width: 90px;
+  } 
+
   .first-box {
-    top: 1950px;
+    left: 550px;
+    margin-left: 0;
   }
 
   .right-box {
@@ -803,20 +888,24 @@ iframe {
     width: 825px;
     height: 520px;
   }
-
 }
 
 
 @media only screen and (max-width: 1300px) {
+  .slogan {
+    font-size: 15px;
+  }
+
+  .cta-wrapper {
+    width: 84%;
+  }
   .pipe-box {
     margin-top: 300px;
     width: 200%;
     height: 5000px;
     margin-left: -530px;
   }
-  .first-box {
-    top: 1800px;
-  }
+
 
   .right-box {
     top: 1180px;
@@ -940,14 +1029,14 @@ iframe {
   }
 
   .first-box {
-    margin-left: -20px;
-    top: 1850px;
+    left: 450px;
+    top: 400px;
   }
   .right-box {
     margin-right: 30px;
     top: 940px;
     right: 450px;
-    padding-left: 0;
+    padding-left: 200px;
   }
   .left-box {
     top: 1600px;
@@ -981,7 +1070,6 @@ iframe {
     top: 1931px;
   }
   .fourth-video {
-    background-color: green;
     position: absolute;
     left:1078px;
     top: 2912px;
@@ -995,7 +1083,6 @@ iframe {
     left:593px;
     width: 660px;
     height: 416px;
-    background-color: green;
   }
 }
 
@@ -1156,12 +1243,16 @@ iframe {
     right: 50px;
     cursor: pointer;
   }
+  .powered-wrapper {
+    margin: 120px 0;
+  }
 }
 
 @media only screen and (max-width: 565px) {
   .powered-wrapper {
-    margin-top: 100px;
+    margin-top: 120px;
     font-size: 20px;
+    padding: 10px;
   }
 
   .cta {
@@ -1223,7 +1314,7 @@ iframe {
 @media only screen and (max-width: 400px) {
   .poolshark-name {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .wholeapp {
@@ -1244,5 +1335,9 @@ iframe {
     width: 100%;
     font-size: 25px;
     line-height: normal;
+  }
+
+  .footer > * {
+    margin: 10px 0;
   }
 }

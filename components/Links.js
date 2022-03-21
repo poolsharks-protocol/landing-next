@@ -1,18 +1,21 @@
-import { useEffect, useState } from "react";
+import logo from '../public/logo.png'
 
 function Links() {
+  
   return (
     <div>
-      <div className="links-top pt-3 pe-0 pe-md-5 me-0 me-md-4">
+      <div className="links-top pt-3 justify-content-center justify-content-md-between">
+      <img className='links-top-logo d-none d-md-block' alt="logo" height="60px"  src={logo.src} />
+      <div className='links-top-links'>
         <a
-          className="px-2 pe-md-5"
+          className="px-1 pe-md-3"
           href="https://poolsharks-protocol.github.io/DCEX-Docs/"
           target="_blank"
           rel="noreferrer"
         >
           <svg
             className="icons-top"
-            width="30"
+            width="20"
             height="30"
             viewBox="0 0 30 30"
             fill="none"
@@ -26,17 +29,17 @@ function Links() {
             />
           </svg>
 
-          <p className=" ps-2 d-none d-md-inline">Docs</p>
+          <p className="link-label ps-2 d-none d-md-inline">Docs</p>
         </a>
         <a
-          className="px-2 pe-md-5"
+          className="px-1 pe-md-3"
           href="https://github.com/poolsharks-protocol"
           target="_blank"
           rel="noreferrer"
         >
           <svg
             className="icons-top"
-            width="30"
+            width="20"
             height="30"
             viewBox="0 0 30 30"
             fill="none"
@@ -50,17 +53,17 @@ function Links() {
             />
           </svg>
 
-          <p className=" ps-2 d-none d-md-inline">Github</p>
+          <p className="link-label ps-2 d-none d-md-inline">Github</p>
         </a>
         <a
-          className="px-2 pe-md-5"
+          className="px-1 pe-md-3"
           href="https://discord.gg/cUPdThWT"
           target="_blank"
           rel="noreferrer"
         >
           <svg
             className="icons-top"
-            width="30"
+            width="20"
             height="34"
             viewBox="0 0 30 34"
             fill="none"
@@ -72,18 +75,18 @@ function Links() {
             />
           </svg>
 
-          <p className=" ps-2 d-none d-md-inline">Discord</p>
+          <p className="link-label ps-2 d-none d-md-inline">Discord</p>
         </a>
 
         <a
-          className="px-2 pe-md-5"
+          className="px-1 pe-md-3"
           href="https://twitter.com/poolsharks_defi"
           target="_blank"
           rel="noreferrer"
         >
           <svg
             className="icons-top"
-            width="30"
+            width="20"
             height="30"
             viewBox="0 0 30 30"
             fill="none"
@@ -97,8 +100,9 @@ function Links() {
             />
           </svg>
 
-          <p className=" ps-2 d-none d-md-inline">Twitter</p>
+          <p className="link-label ps-2 d-none d-md-inline">Twitter</p>
         </a>
+        </div>
       </div>
     </div>
   );

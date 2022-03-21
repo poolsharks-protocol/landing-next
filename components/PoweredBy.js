@@ -8,22 +8,38 @@ function PoweredBy() {
   return (
     <div className="powered-wrapper mx-0 text-center">
         <h1 className='text-center mb-5 powered-label'>Powered By</h1>
-        <div className='row px-0 mt-5'>
-            <div className='col-6 col-md-3 text-center d-flex align-items-center flex-column justify-content-between'>
-                <img src={graph.src} alt="The graph" width="100px"/>
-                <p className='mt-3'>The Graph</p>
+        <div className='row mt-5'>
+        <div className='col-12 col-md-6 col-xl-6 col-xxl-3 mt-5'>
+                <div className='powered-item'>
+                    <img className='powered-icon' src={ethereum.src} alt="Ethereum" width="100px"/>
+                    <p className='mt-3 powered-headline'>Ethereum</p>
+                    <p className='mt-3 powered-txt'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
+                </div>
             </div>
-            <div className='col-6 col-md-3 text-center d-flex align-items-center flex-column justify-content-between'>
-                <img src={gelato.src} alt="gelato" width="100px"/>
-                <p className='mt-3'>Gelato</p>
+            <div className='col-12 col-md-6 col-xl-6 col-xxl-3 mt-5'>
+                <div className='powered-item'>
+                    <img className='powered-icon' src={graph.src} alt="The graph" width="100px"/>
+                    <p className='mt-3 powered-headline'>The Graph</p>
+                    <p className='mt-3 powered-txt'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
+                </div>
             </div>
-            <div className='col-6 col-md-3 text-center d-flex align-items-center flex-column justify-content-between'>
-                <img className='ethereum' src={ethereum.src} alt="Ethereum" width="100px"/>
-                <p className='mt-3'>Ethereum</p>
+            <div className='col-12 col-md-6 col-xl-6 col-xxl-3 mt-5'>
+                <div className='powered-item'>
+                    <img className='powered-icon' src={polywrap.src} alt="Polywrap" width="100px"/>
+                    <p className='mt-3 powered-headline'>Polywrap</p>
+                    <p className='mt-3 powered-txt'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
+                </div>
             </div>
-            <div className='col-6 col-md-3 text-center d-flex align-items-center flex-column justify-content-between'>
-                <img className='ethereum' src={polywrap.src} alt="Polywrap" width="100px"/>
-                <p className='mt-3'>Polywrap</p>
+            <div className='col-12 col-md-6 col-xl-6 col-xxl-3 mt-5'>
+                <div className='powered-item'>
+                    <img className='powered-icon' src={gelato.src} alt="gelato" width="100px"/>
+                    <p className='mt-3 powered-headline'>Gelato</p>
+                    <p className='mt-3 powered-txt'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
+                </div>
             </div>
         </div>
     </div>
