@@ -4,18 +4,18 @@
 * Autoprefixer: v10.3.1
 * Browsers: last 4 version
 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700&family=Sora:wght@100;300;400;500;600;700&display=swap');
 
 a {
   color: white!important;
   text-decoration: none!important
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
-
 body {
-  background: black !important;
+  background: #0c0c0c !important;
   color: white !important;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Sora', sans-serif!important;
   overflow-x: hidden;
 }
 
@@ -45,14 +45,31 @@ body {
   margin: 0;
 }
 
+.links-top-logo {
+  margin-left: 70px;
+}
+
 .links-top {
-  text-align: right;
+  margin-right: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .links-top a {
   color: #c7c7c7;
   text-decoration: none;
 }
 
+.links-top-links {
+  display: inline-block;
+  text-align: right;
+}
+
+.link-label {
+  font-size: 12px;
+  margin: 0;
+  font-weight: thin;
+}
 a:hover {
   color: white!important;
 }
@@ -67,7 +84,7 @@ a:hover {
   border-radius: 8px;
   border: none;
   color: white;
-  font-size: 14px;
+  font-size: 17px;
   padding: 3px 9px;
   -webkit-box-shadow: 0px 0px 7px 0 #0071d9;
   box-shadow: 0px 0px 7px 0 #0071d9;
@@ -89,12 +106,12 @@ a:hover {
 }
 
 .slogan {
-  font-size: 22px;
+  font-size: 20px;
   text-align: right;
   font-weight: 500;
   margin-top: 33px;
   margin-bottom: 33px;
-  letter-spacing: .4px;
+  letter-spacing: 1.7px;
 }
 
 .poolshark-name {
@@ -104,6 +121,7 @@ a:hover {
 .lines {
   position: absolute;
   left: 0;
+  top: 800px;
   height: 500px !important;
   z-index: 1;
   width: 100%;
@@ -123,8 +141,7 @@ a:hover {
   background: white;
   outline: none;
   border: none;
-  font-size: 27px;
-  font-weight: 700;
+  font-size: 25px;
   border-radius: 8px;
   -webkit-box-shadow: 0 0 8px 0 #ced8f7;
   box-shadow: 0 0 8px 0 #ced8f7;
@@ -132,6 +149,8 @@ a:hover {
   position: relative;
   z-index: 10;
   padding: 1px 15px;
+  font-family: 'Montserrat', sans-serif!important;
+  font-weight: 600;
 }
 
 .coins-wrapper {
@@ -139,32 +158,29 @@ a:hover {
 }
 
 .coin1 {
-  width: 180px;
   position: absolute;
   right: 100px;
   top: 50px;
-  -webkit-animation: entering 2s 3.6s backwards, float 6s ease-in-out infinite;
-  animation: entering 2s 3.6s backwards, float 6s ease-in-out infinite;
+  -webkit-animation: entering 2s backwards, float 6s ease-in-out infinite;
+  animation: entering 2s  backwards, float 6s ease-in-out infinite;
   -webkit-perspective: 800px;
   perspective: 800px;
 }
 
 .coin2 {
-  width: 190px;
   position: absolute;
   right: 210px;
   top: 138px;
-  -webkit-animation: entering 2s 3s backwards, float2 8s ease-in-out infinite;
-  animation: entering 2s 3s backwards, float2 8s ease-in-out infinite;
+  -webkit-animation: entering 2s .3s backwards, float2 8s ease-in-out infinite;
+  animation: entering 2s .3s backwards, float2 8s ease-in-out infinite;
 }
 
 .coin3 {
-  width: 150px;
   position: absolute;
   right: 260px;
   top: 10px;
-  -webkit-animation: entering 2s 3.9s backwards, float3 4s ease-in-out infinite;
-  animation: entering 2s 3.9s backwards, float3 4s ease-in-out infinite;
+  -webkit-animation: entering 2s .9s backwards, float3 4s ease-in-out infinite;
+  animation: entering 2s .9s backwards, float3 4s ease-in-out infinite;
 }
 @-webkit-keyframes entering {
   0% {
@@ -287,21 +303,18 @@ a:hover {
   width: 25%;
 }
 
-.bg {
-  background-color: green;
-}
 
 .shark-img {
-  margin-top: 80px;
+  margin-top: 50px;
   margin-left: -100px;
-  width: 120%;
+  width: 130%;
   z-index: 3;
   position: relative;
-  animation: fadeIn 2s 2s backwards;
-  -webkit-animation: fadeIn 2s 2s backwards;
-  -moz-animation: fadeIn 2s 2s backwards;
-  -o-animation: fadeIn 2s 2s backwards;
-  -ms-animation: fadeIn 2s 2s backwards;
+  animation: fadeIn 2s  backwards;
+  -webkit-animation: fadeIn 2s  backwards;
+  -moz-animation: fadeIn 2s  backwards;
+  -o-animation: fadeIn 2s  backwards;
+  -ms-animation: fadeIn 2s  backwards;
 }
 @-webkit-keyframes fadeIn {
   0% {
@@ -358,36 +371,69 @@ a:hover {
   margin-top: 200px;
 }
 
+.powered-wrapper {
+  margin-top: 10px;
+  margin-bottom: 600px;
+  font-size: 28px;
+  font-weight: 500;
+  padding: 80px 90px 100px;
+}
+
+.powered-icon {
+  border-radius: 100px;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+}
+
+.powered-headline {
+  font-size: 35px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.powered-txt {
+  text-align: left;
+  font-size: 18px;
+}
+
+.powered-item {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0px 20px;
+  border: 6px solid white;
+  border-radius: 37px;
+  margin: 0px 40px;
+}
+
 .powered-label {
-  background-color: #254953;
   display: inline-block;
-  padding: 10px 30px 13px;
+  padding: 8px 20px;
   border-radius: 40px;
   margin: 0;
-  box-shadow: inset -5px 5px 20px #447988, inset 5px -5px 10px #131d20;
-
+  border: 4px solid white;
 }
 
 .box-label {
-  font-weight: 500;
-  font-size: 75px;
+  font-weight: 700;
+  font-size: 55px;
   width: 100%;
   color: #27f09e;
   position: relative;
   z-index: 2;
   line-height: 66px;
+  margin-bottom: 70px;
+  font-family: 'Montserrat', sans-serif!important;
 }
 .white-txt {
   color: white;
   margin-bottom: 0;
 }
 
-.first-box {
-  margin-left: -180px;
-}
+
 
 .box-text {
-  font-size: 44px;
+  font-size: 33px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,8 +452,8 @@ a:hover {
 
 .pipe {
   width: 250%;
-  margin-top: -800px;
-  margin-left: -945px;
+  margin-top: -900px;
+  margin-left: -845px;
 }
 
 .text-right {
@@ -415,20 +461,19 @@ a:hover {
 }
 
 .pipe-box {
+  width: 235%;
+  height: 6000px;
   position: relative;
-  margin-top: -100px;
+  margin-left: -850px;
+  
 }
 
-.vibrate-1 {
-  background: rgb(0, 0, 0);
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 88;
-  padding-top: 300px;
+
+.first-box {
+  position: absolute;
+  top: 590px;
+  margin-left: 700px;
+  width: 45%;
 }
 
 .right-box {
@@ -439,8 +484,9 @@ a:hover {
   -ms-flex-pack: end;
   justify-content: flex-end;
   position: absolute;
-  top: 660px;
-  right: -166px;
+  top: 1430px;
+  width: 45%;
+  right: 770px;
   text-align: right;
 }
 
@@ -451,27 +497,26 @@ a:hover {
 
 .left-box {
   position: absolute;
-  top: 1650px;
-  left: -180px;
+  top: 2390px;
+  margin-left: 700px;
+  width: 50%;
 }
 
 .center-box {
   position: absolute;
-  bottom: 800px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
   text-align: right;
-  right: -166px;
+  bottom: 880px;
+  right: 330px;
+  width: 45%;
 }
 
 .video {
   position: absolute;
-  bottom: 2006px;
-  left: 79px;
+  bottom: 1957px;
+  left: 963px;
+  width: 1077px;
+  height: 626px;
+  overflow: hidden;
 }
 
 iframe {
@@ -480,68 +525,68 @@ iframe {
 
 .first-video {
   position: absolute;
-  left: -153px;
-  top: 316px;
+  left:747px;
+  top: 1030px;
 }
 
 .second-video {
+  overflow: hidden;
+  width: 429px;
+  height: 227px;
   position: absolute;
-  left: 826px;
-  top: 1312px;
+  left: 1665px;
+  top: 2057px;
 }
 
 .third-video {
+  overflow: hidden;
+  width: 429px;
+  height: 224px;
   position: absolute;
-  left: -82px;
-  top: 2172px;
+  left: 813px;
+  top: 2896px;
 }
 
 .fourth-video {
   position: absolute;
-  left: 918px;
-  top: 3684px;
+  left: 1750px;
+  top: 4370px;
+  overflow: hidden;
+  width: 433px;
+  height: 220px;
 }
 
 .coin-one {
   position: absolute;
-  right: 111px;
-  top: -310px;
+  right:1011px;
+  top: 450px;
   z-index: 2;
 }
 
 .coin-two {
   position: absolute;
-  left: 400px;
-  bottom: 620px;
+  left: 1240px;
+  bottom: 700px;
 }
 
-.powered-wrapper {
-  background-color: rgba(0, 0, 0, 0.267);
-  width: 100%;
-  margin-top: 250px;
-  font-size: 28px;
-  font-weight: 500;
-  padding: 80px 0 100px;
-}
+
 
 
 
 @media only screen and (max-width: 1700px) {
-  /* .shark-img {
-    margin-top: 200px;
-    max-width: 1100px;
-  } */
-
-
-  .first-video {
-    left: -22px;
-    top: 365px;
+  .powered-item {
+    margin: 0px 10px;
+  }
+  .links-top-logo {
+    margin-left: 50px;
   }
 
-  .pipe {
-    width: 210%;
-    margin-top: -800px;
-    margin-left: -680px;
+  .slogan {
+    font-size: 16px;
+  }
+
+  .pipe-box {
+    margin-left: -840px;
   }
 
   .box-label {
@@ -557,58 +602,48 @@ iframe {
   }
 
   .first-box {
-    margin-left: -30px;
-    padding-right: 120px;
+    padding-right: 200px;
   }
 
   .right-box {
-    top: 420px;
-    right: -30px;
-    padding-left: 300px;
+    top: 1420px;
+    right: 780px;
+    width: 40%;
   }
 
   .left-box {
-    top: 1250px;
-    padding-right: 200px;
-    margin-left: 130px;
-  }
-
-  .center-box {
-    right: -30px;
+    top: 2400px;
+    width: 45%;
   }
 
   .first-video {
-    left: -12px;
-    top: 126px;
+    left: 748px;
+    top: 1080px;
   }
 
   .second-video {
-    left: 767px;
-    top: 976px;
-  }
-
-  .video {
-    left: 182px;
-    top: 2148px;
+    width: 429px;
+    height: 224px;
+    left: 1665px;
+    top: 2057px;
   }
 
   .third-video {
-    left: 46px;
-    top: 1698px;
+    width: 429px;
+    height: 224px;
+    left: 813px;
+    top: 2896px;
   }
 
   .fourth-video {
-    left: 889px;
-    top: 2967px;
-  }
-
-  .coin-one {
-    top: -400px;
-    right: 180px;
+    position: absolute;
+    left:1757px;
+    top: 4368px;
+    width: 426px;
   }
 
   .coin1, .coin2, .coin3 {
-    width: 120px;
+    width: 140px;
   }
   .coin3 {
     right: 220px;
@@ -617,6 +652,7 @@ iframe {
   .coin2 {
     top: 100px;
   }
+
 }
 
 
@@ -625,16 +661,8 @@ iframe {
     margin-left: -30px;
   }
 
-  .right-box {
-    right: 0;
-  }
-
   .center-box {
-    right: 0;
-  }
-
-  .coin-one {
-    right: 170px;
+    bottom: 1000px;
   }
 
   .box-label {
@@ -645,36 +673,70 @@ iframe {
   .box-text {
     font-size: 25px;
   }
-}
-@media only screen and (max-width: 1400px) {
-
-
   .first-box {
-    margin-left: -30px;
+    margin-left: 760px;
   }
 
   .right-box {
-    top: 350px;
-    right: 0px;
-    margin-right: -30px;
+    right: 800px;
   }
 
   .left-box {
-    top: 1030px;
+    margin-left: 760px;
+  }
+  .center-box {
+    margin-right: 40px;
+  }
+
+}
+@media only screen and (max-width: 1545px) {
+
+  .links-top-logo {
+    margin-left: 30px;
+  }
+  .links-top {
+    margin-right: 0;
+  }
+
+  .pipe-box {
+    width: 200%;
+    margin-left:-630px;
+  }
+
+  .first-box {
+    margin-left: 600px;
+  }
+
+  .right-box {
+    top: 1450px;
+    margin-right: -110px;
+  }
+
+  .left-box {
+    top: 2430px;
+    margin-left: 600px;
   }
 
   .center-box {
-    bottom: 650px;
+    bottom: 980px;
     margin-right: -30px;
   }
 
   .video {
-    top: 1820px;
-    left: 154px;
+    position: absolute;
+    bottom: 1957px;
+    left: 821px;
+    width: 915px;
+    height: 626px;
   }
 
   .powered-wrapper {
-    margin-top: 340px;
+    margin-top: 140px;
+    margin-bottom: 300px;
+  }
+
+  .powered-icon {
+    width: 70px;
   }
 
   .pipe {
@@ -684,35 +746,41 @@ iframe {
   }
 
   .coin-one {
-    right: 153px;
-    width: 120px;
+    top: 500px;
+    right: 873px;
   }
 
   .coin-two {
-    left: 350px;
-    bottom: 500px;
+    left: 1050px;
+    bottom: 800px;
   }
   .first-video {
-    top: 88px;
-    left: -34px;
+    top: 1087px;
+    left: 636px;
+    width: 364px;
+    height: 223px;
+    overflow: hidden;
   }
 
   .second-video {
-    position: absolute;
-    left: 607px;
-    top: 809px;
+    width: 363px;
+    height: 224px;
+    left: 1417px;
+    top: 2057px;
   }
 
   .third-video {
-    position: absolute;
-    left: 28px;
-    top: 1432px;
+    width: 363px;
+    height: 224px;
+    left: 693px;
+    top: 2896px;
   }
 
   .fourth-video {
     position: absolute;
-    left: 753px;
-    top: 2525px;
+    left:1495px;
+    top: 4368px;
+    width: 363px;
   }
 
   .shark-img {
@@ -739,15 +807,110 @@ iframe {
   }
 }
 
+@media only screen and (max-width: 1400px) {
+  .links-top-logo {
+    margin-left: 70px;
+  }
+  .pipe-box {
+    width: 210%;
+    height: 5000px;
+    margin-left: -570px;
+    margin-top: 400px;
+  }
 
-@media only screen and (max-width: 1300px) {
+  .powered-icon {
+    width: 90px;
+  } 
+
   .first-box {
+    left: 550px;
     margin-left: 0;
+    top: 500px;
+  }
+
+  .right-box {
+    top: 1250px;
+    margin-right: -170px;
   }
 
   .left-box {
-    left: 0;
+    left: 550px;
+    top: 2000px;
     margin-left: 0;
+  }
+
+  .center-box {
+    bottom: 800px;
+    margin-right: -60px;
+  }
+  .coin-one {
+    top: 405px;
+    right: 790px;
+  }
+
+  .coin-two {
+    left: 900px;
+    bottom: 630px;
+  }
+
+  .first-video {
+    top: 907px;
+    left: 576px;
+    width: 329px;
+    height: 183px;
+  }
+
+  .second-video {
+    width: 332px;
+    height: 191px;
+    left: 1280px;
+    top: 1712px;
+  }
+  
+  .third-video {
+    width: 329px;
+    height: 185px;
+    left: 625px;
+    top: 2413px;
+  }
+
+  .fourth-video {
+    position: absolute;
+    left:1352px;
+    top: 3638px;
+    width: 328px;
+    height: 188px;
+  }
+
+  .video {
+    position: absolute;
+    bottom: 1632px;
+    left: 743px;
+    width: 825px;
+    height: 520px;
+  }
+}
+
+
+@media only screen and (max-width: 1300px) {
+  .slogan {
+    font-size: 15px;
+  }
+
+  .cta-wrapper {
+    width: 84%;
+  }
+  .pipe-box {
+    margin-top: 300px;
+    width: 200%;
+    height: 5000px;
+    margin-left: -530px;
+  }
+
+
+  .right-box {
+    top: 1180px;
+    margin-right: -200px;
   }
 
   .coins {
@@ -757,9 +920,57 @@ iframe {
   .cta-wrapper {
     margin-left: 0;
   }
+
+  .coin-one {
+    right: 740px;
+  }
+
+  .first-video {
+    top: 907px;
+    left: 547px;
+    width: 313px;
+    height: 185px;
+  }
+
+  .second-video {
+    width: 313px;
+    height: 188px;
+    left: 1220px;
+    top: 1714px;
+  }
+
+  .third-video {
+    width: 313px;
+    height: 185px;
+    left: 595px;
+    top: 2413px;
+  }
+
+  .fourth-video {
+    position: absolute;
+    left:1288px;
+    top: 3638px;
+    width: 314px;
+    height: 188px;
+  }
+
+  .video {
+    position: absolute;
+    bottom: 1632px;
+    left: 707px;
+    width: 787px;
+    height: 520px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
+
+  .pipe-box {
+    margin-top: 300px;
+    width: 200%;
+    height: 4000px;
+    margin-left: -470px;
+  }
   .logo {
     width: 100px;
   }
@@ -774,15 +985,15 @@ iframe {
   }
 
   .coin-one {
-    top: -300px;
-    right: 160px;
-    width: 100px;
-  }
+    height: 100px;
+    top: 300px;
+    right: 630px;
+  } 
 
   .coin-two {
     height: 100px;
-    bottom: 450px;
-    left: 290px;
+    bottom: 550px;
+    left: 790px;
   }
 
 
@@ -802,11 +1013,6 @@ iframe {
     width: 180%;
   }
 
-  .video {
-    left: 184px;
-    top: 1304px;
-  }
-
   .cta-wrapper {
     margin-left: 0;
   }
@@ -824,47 +1030,60 @@ iframe {
   }
 
   .first-box {
-    margin-left: 50px;
-    padding-right: 140px;
-    margin-bottom: 40px;
+    left: 450px;
+    top: 400px;
   }
   .right-box {
     margin-right: 30px;
-    top: 240px;
+    top: 940px;
+    right: 450px;
+    padding-left: 200px;
   }
   .left-box {
-    margin-left: 50px;
-    top: 750px;
+    top: 1600px;
+    left: 450px;
   }
 
   .center-box {
     text-align: right;
-    width: 80%;
-    bottom: 450px;
-    margin-right: 30px;
+    bottom: 650px;
+    margin-right: 0px;
+    right: 180px;
   }
 
   .first-video {
-    position: absolute;
-    top: 63px;
-    left: 0px;
+    top: 725px;
+    left: 459px;
+    width: 263px;
+    height: 149px;
   }
   .second-video {
-    left: 470px;
-    top: 579px;
+    width: 263px;
+    height: 148px;
+    left: 1023px;
+    top: 1372px;
   }
+
   .third-video {
-    left: 77px;
-    top: 1027px;
+    width: 263px;
+    height: 149px;
+    left: 500px;
+    top: 1931px;
   }
   .fourth-video {
-    left: 623px;
-    top: 1797px;
+    position: absolute;
+    left:1078px;
+    top: 2912px;
+    width: 264px;
+    height: 148px;
   }
 
   .video {
-    left: 184px;
-    top: 1305px;
+    position: absolute;
+    bottom: 1305px;
+    left:593px;
+    width: 660px;
+    height: 416px;
   }
 }
 
@@ -883,9 +1102,21 @@ iframe {
   .burger-menu {
     display: none;
   }
+
+  .center-box {
+    bottom: 600px;
+    right: 200px;
+  }
+
 }
 
-@media only screen and (max-width: 994px) {
+@media only screen and (max-width: 990px) {
+  .pipe-box {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
   .links-top {
     text-align: center;
   }
@@ -912,6 +1143,7 @@ iframe {
 
   .box-label {
     font-size: 35px;
+    color: white;
   }
 
   .z-index {
@@ -924,27 +1156,27 @@ iframe {
     font-size: 20px;
     border-radius: 10px;
     padding: 10px;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    border-radius: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.479);
   }
 
   .first-box {
+    position: static;
     margin-left: 0;
     text-align: center;
     padding-right: 0;
+    width: 100%;
+
   }
 
-  .right-box {
+  .right-box, .left-box, .center-box {
     position: static;
+    margin: 0;
+    padding: 0;
     width: 100%;
     margin-top: 130px;
-    padding: 0;
-    text-align: center;
-  }
-
-  .left-box {
-    position: static;
-    margin-top: 130px;
-    padding-right: 0;
-    margin-left: 0;
     text-align: center;
   }
 
@@ -952,12 +1184,24 @@ iframe {
     margin-top: 100px;
   }
 
-  .center-box {
-    position: static;
-    width: 100%;
-    margin-top: 130px;
-    text-align: center;
+  .first-text {
+    background-image: url('../public/firstbox.png');
   }
+
+  .second-text {
+    background-position: bottom;
+    background-image: url('../public/secondbox.png');
+  }
+
+  .third-text {
+    background-image: url('../public/thirdbox.png');
+  }
+
+  .fourth-text {
+    background-image: url('../public/fourthbox.png');
+  }
+
+
 
   .cta-wrapper {
     text-align: left;
@@ -1005,12 +1249,16 @@ iframe {
     right: 50px;
     cursor: pointer;
   }
+  .powered-wrapper {
+    margin: 120px 0;
+  }
 }
 
 @media only screen and (max-width: 565px) {
   .powered-wrapper {
-    margin-top: 100px;
+    margin-top: 120px;
     font-size: 20px;
+    padding: 10px;
   }
 
   .cta {
@@ -1043,7 +1291,7 @@ iframe {
   }
 
   .sm-label {
-    width: 70%;
+    width: 100%;
   }
 
   .sm-label-two {
@@ -1060,7 +1308,6 @@ iframe {
 
   .box-text {
     text-align: left !important;
-    padding: 0;
   }
 
   .center-box {
@@ -1073,7 +1320,7 @@ iframe {
 @media only screen and (max-width: 400px) {
   .poolshark-name {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .wholeapp {
@@ -1091,8 +1338,12 @@ iframe {
     font-size: 17px;
   }
   .box-label {
-    width: 95%;
-    font-size: 27px;
+    width: 100%;
+    font-size: 25px;
     line-height: normal;
+  }
+
+  .footer > * {
+    margin: 10px 0;
   }
 }

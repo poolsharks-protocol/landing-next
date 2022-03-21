@@ -2,39 +2,28 @@ import poolshark from '../public/poolshark.png'
 import logo from '../public/logo.png'
 import shark from '../public/shark.png'
 import lines from '../public/hero-bg.png'
-import { useEffect, useState } from 'react'
 import coin1 from '../public/coin1.png'
-import coin2 from '../public/coin2.svg'
+import coin2 from '../public/coin2.png'
 import coin3 from '../public/coin3.png'
 
-function Header(props) {
-  const [w, setW] = useState(0)
+function Header() {
 
-    const changeState = () => {
-      setTimeout(() => {
-        props.setIsHeaderLoaded(true)
-      }, 400);
-    }
-
-    useEffect(() => {
-      setW(window.innerWidth)
-    },[])
 
   return (
   <div className='header'>
       <div className="row">
         <div className="col-12 col-lg-4 d-flex align-items-end flex-column">
           <div className="cta-wrapper pe-xxl-4 pt-5 me-xxl-5">
-            <img alt="logo" src={logo.src} className="logo"/>
+            <img alt="logo" src={logo.src} className="logo d-block d-md-none"/>
             <img alt="Poolsharks" src={poolshark.src} className="poolshark-name" />
             <p className="slogan">Take Part in the Next Wave of DeFi Exchange</p>
             <button onClick={() =>window.open("https://poolsharks-protocol.github.io/DCEX-Docs/", '_blank')} 
-              className="cta">View Docs</button>
+              className="cta">VIEW DOCS</button>
           </div>
         </div>
         <div className="col-lg-6">
           <div className="shark">
-            <img alt="shark" onLoad={changeState} src={shark.src} className="shark-img" />
+            <img alt="shark"  src={shark.src} className="shark-img" />
           </div>
         </div>
         <div className="col-lg-2 mt-5 coins-wrapper">
