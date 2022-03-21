@@ -16,9 +16,8 @@ function Header() {
           <div className="cta-wrapper pe-xxl-4 pt-5 me-xxl-5">
             <img alt="logo" src={logo.src} className="logo d-block d-md-none"/>
             <img alt="Poolsharks" src={poolshark.src} className="poolshark-name" />
-            <p className="slogan">Take Part in the Next Wave of DeFi Exchange</p>
             <button onClick={() =>window.open("https://poolsharks-protocol.github.io/DCEX-Docs/", '_blank')} 
-              className="cta">VIEW DOCS</button>
+              className="cta mt-5">VIEW DOCS</button>
           </div>
         </div>
         <div className="col-lg-6">

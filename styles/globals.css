@@ -105,14 +105,6 @@ a:hover {
   background-image: url("../public/grid.png");
 }
 
-.slogan {
-  font-size: 20px;
-  text-align: right;
-  font-weight: 500;
-  margin-top: 33px;
-  margin-bottom: 33px;
-  letter-spacing: 1.7px;
-}
 
 .poolshark-name {
   width: 100%;
@@ -581,10 +573,6 @@ iframe {
     margin-left: 50px;
   }
 
-  .slogan {
-    font-size: 16px;
-  }
-
   .pipe-box {
     margin-left: -840px;
   }
@@ -893,9 +881,6 @@ iframe {
 
 
 @media only screen and (max-width: 1300px) {
-  .slogan {
-    font-size: 15px;
-  }
 
   .cta-wrapper {
     width: 84%;
@@ -973,11 +958,6 @@ iframe {
   }
   .logo {
     width: 100px;
-  }
-
-  .slogan {
-    text-align: left;
-    font-size: 20px;
   }
 
   .box-text {
@@ -1209,10 +1189,6 @@ iframe {
     width: 90%;
   }
 
-  .slogan {
-    text-align: left;
-  }
-
   .cta {
     border-radius: 30px;
     -webkit-box-shadow: 0 0 17px 0px white;
@@ -1275,12 +1251,6 @@ iframe {
     background-position: 100px;
   }
 
-  .slogan {
-    width: 100%;
-    font-size: 20px;
-    margin-bottom: 100px;
-  }
-
   .wholeapp {
     background-position: 70px;
   }
@@ -1325,11 +1295,6 @@ iframe {
 
   .wholeapp {
     background-position: 150px -400px;
-  }
-
-  .slogan {
-    font-size: 20px;
-    text-align: center;
   }
 
   .box-text {

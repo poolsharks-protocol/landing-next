@@ -17,7 +17,7 @@ function Pipes() {
     <>
       {w > 994 && <img alt="coin" src={coin1.src} className="coin-one" />}
       <div className={`pipe`}>
-      <Image layout="fill" alt="pipes" src={pipe.src}  />
+      <Image quality={100} layout="fill" alt="pipes" src={pipe.src}  />
       </div>
       {w > 994 && <img alt="coin" src={coin2.src} className="coin-two" />}
     </>
