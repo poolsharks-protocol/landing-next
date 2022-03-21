@@ -2,23 +2,12 @@ import poolshark from '../public/poolshark.png'
 import logo from '../public/logo.png'
 import shark from '../public/shark.png'
 import lines from '../public/hero-bg.png'
-import { useEffect, useState } from 'react'
 import coin1 from '../public/coin1.png'
 import coin2 from '../public/coin2.svg'
 import coin3 from '../public/coin3.png'
 
-function Header(props) {
-  const [w, setW] = useState(0)
+function Header() {
 
-    const changeState = () => {
-      setTimeout(() => {
-        props.setIsHeaderLoaded(true)
-      }, 400);
-    }
-
-    useEffect(() => {
-      setW(window.innerWidth)
-    },[])
 
   return (
   <div className='header'>
@@ -34,7 +23,7 @@ function Header(props) {
         </div>
         <div className="col-lg-6">
           <div className="shark">
-            <img alt="shark" onLoad={changeState} src={shark.src} className="shark-img" />
+            <img alt="shark"  src={shark.src} className="shark-img" />
           </div>
         </div>
         <div className="col-lg-2 mt-5 coins-wrapper">

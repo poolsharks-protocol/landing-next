@@ -1,9 +1,10 @@
-import pipe from "../public/pipe.svg";
+import pipe from "../public/pipe.webp";
 import coin1 from "../public/coin1.png";
 import coin2 from "../public/coin2.svg";
 import {useEffect, useState} from 'react'
+import Image from "next/image";
 
-function Pipes(props) {
+function Pipes() {
   const [w, setW] = useState(0)  
 
 
@@ -11,17 +12,17 @@ function Pipes(props) {
     setW(window.innerWidth)
   },[])
 
-  const loadedState = () => {
-    props.setIsLoaded(true)
-  }
+
 
 
 
   return (
     <>
-      {props.isLoaded && w > 994 && <img alt="coin" src={coin1.src} className="coin-one" />}
-      <img alt="pipes" onLoad={loadedState} src={pipe.src} className={`pipe`} />
-      {props.isLoaded && w > 994 && <img alt="coin" src={coin2.src} className="coin-two" />}
+      {w > 994 && <img alt="coin" src={coin1.src} className="coin-one" />}
+      <div className={`pipe`}>
+      <Image layout="fill" alt="pipes" src={pipe.src}  />
+      </div>
+      {w > 994 && <img alt="coin" src={coin2.src} className="coin-two" />}
     </>
   );
 }
