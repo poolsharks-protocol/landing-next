@@ -485,7 +485,7 @@ a:hover {
   justify-content: flex-end;
   position: absolute;
   top: 1430px;
-  width: 55%;
+  width: 45%;
   right: 770px;
   text-align: right;
 }
@@ -499,7 +499,7 @@ a:hover {
   position: absolute;
   top: 2390px;
   margin-left: 700px;
-  width: 55%;
+  width: 50%;
 }
 
 .center-box {
@@ -608,12 +608,12 @@ iframe {
   .right-box {
     top: 1420px;
     right: 780px;
-    padding-left: 500px;
+    width: 40%;
   }
 
   .left-box {
     top: 2400px;
-    padding-right: 200px;
+    width: 45%;
   }
 
   .first-video {
@@ -825,6 +825,7 @@ iframe {
   .first-box {
     left: 550px;
     margin-left: 0;
+    top: 500px;
   }
 
   .right-box {
@@ -1100,6 +1101,11 @@ iframe {
   }
   .burger-menu {
     display: none;
+  }
+
+  .center-box {
+    bottom: 600px;
+    right: 200px;
   }
 
 }

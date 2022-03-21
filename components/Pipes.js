@@ -12,7 +12,6 @@ function Pipes() {
     setW(window.innerWidth)
   },[])
 
-
   return (
     <>
       {w > 994 && <img alt="coin" src={coin1.src} className="coin-one" />}
