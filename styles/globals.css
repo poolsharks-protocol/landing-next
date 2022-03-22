@@ -66,7 +66,7 @@ body {
 }
 
 .link-label {
-  font-size: 12px;
+  font-size: 14px;
   margin: 0;
   font-weight: thin;
 }
@@ -297,9 +297,9 @@ a:hover {
 
 
 .shark-img {
-  margin-top: 50px;
-  margin-left: -100px;
-  width: 130%;
+  margin-top: 40px;
+  margin-left: -80px;
+  width: 110%;
   z-index: 3;
   position: relative;
   animation: fadeIn 2s  backwards;
@@ -396,6 +396,7 @@ a:hover {
   border: 6px solid white;
   border-radius: 37px;
   margin: 0px 40px;
+  min-height: 280px;
 }
 
 .powered-label {
@@ -408,7 +409,7 @@ a:hover {
 
 .box-label {
   font-weight: 700;
-  font-size: 55px;
+  font-size: 50px;
   width: 100%;
   color: #27f09e;
   position: relative;
@@ -417,15 +418,16 @@ a:hover {
   margin-bottom: 70px;
   font-family: 'Montserrat', sans-serif!important;
 }
+
+
 .white-txt {
   color: white;
   margin-bottom: 0;
 }
 
-
-
 .box-text {
   font-size: 33px;
+  font-weight: 300;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,15 +493,21 @@ a:hover {
   position: absolute;
   top: 2390px;
   margin-left: 700px;
-  width: 50%;
+  width: 40%;
 }
 
 .center-box {
-  position: absolute;
-  text-align: right;
   bottom: 880px;
-  right: 330px;
-  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: absolute;
+  width: 49%;
+  right: 770px;
+  text-align: right;
 }
 
 .video {
@@ -551,7 +559,7 @@ iframe {
 .coin-one {
   position: absolute;
   right:1011px;
-  top: 450px;
+  top: 490px;
   z-index: 2;
 }
 
@@ -571,6 +579,11 @@ iframe {
   }
   .links-top-logo {
     margin-left: 50px;
+  }
+
+  .shark-img {
+    width: 130%;
+    top: 14px;
   }
 
   .pipe-box {
@@ -597,6 +610,11 @@ iframe {
     top: 1420px;
     right: 780px;
     width: 40%;
+  }
+
+  .center-box {
+    right: 780px;
+    width: 45%;
   }
 
   .left-box {
@@ -649,13 +667,12 @@ iframe {
     margin-left: -30px;
   }
 
-  .center-box {
-    bottom: 1000px;
-  }
-
   .box-label {
     font-size: 35px;
     line-height: 35px;
+  }
+  .powered-item {
+    min-height: 300px;
   }
 
   .box-text {
@@ -673,11 +690,17 @@ iframe {
     margin-left: 760px;
   }
   .center-box {
-    margin-right: 40px;
+    bottom: 1000px;
+    margin-right: 15px;
+    width: 38%;
   }
 
 }
 @media only screen and (max-width: 1545px) {
+
+  .cta {
+    font-size: 20px;
+  }
 
   .links-top-logo {
     margin-left: 30px;
@@ -707,7 +730,8 @@ iframe {
 
   .center-box {
     bottom: 980px;
-    margin-right: -30px;
+    margin-right: -110px;
+    width: 44%;
   }
 
   .video {
@@ -772,10 +796,10 @@ iframe {
   }
 
   .shark-img {
-    max-width: 800px;
     margin-left: -77px;
-    margin-top: 200px;
+    margin-top: 50px;
   }
+
   .coin1,
   .coin2,
   .coin3 {
@@ -795,7 +819,7 @@ iframe {
   }
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1399px) {
   .links-top-logo {
     margin-left: 70px;
   }
@@ -804,6 +828,18 @@ iframe {
     height: 5000px;
     margin-left: -570px;
     margin-top: 400px;
+  }
+
+  .powered-item {
+    min-height: 220px;
+  }
+
+  .lines {
+    top: 700px;
+  }
+
+  .shark-img {
+    margin-top: 100px;
   }
 
   .powered-icon {
@@ -829,7 +865,8 @@ iframe {
 
   .center-box {
     bottom: 800px;
-    margin-right: -60px;
+    margin-right: -170px;
+    width: 49%;
   }
   .coin-one {
     top: 405px;
@@ -896,6 +933,11 @@ iframe {
   .right-box {
     top: 1180px;
     margin-right: -200px;
+  }
+
+  .center-box {
+    margin-right: -200px;
+    width: 52%;
   }
 
   .coins {
@@ -981,6 +1023,7 @@ iframe {
   .box-label {
     font-size: 25px;
     line-height: 32px;
+    margin-bottom: 0px;
   }
 
   .z-index {
@@ -1002,8 +1045,7 @@ iframe {
   }
 
   .shark-img {
-    margin-left: -20px;
-    margin-top: 220px;
+
   }
   .lines {
     top: 800px;
@@ -1025,10 +1067,10 @@ iframe {
   }
 
   .center-box {
-    text-align: right;
     bottom: 650px;
-    margin-right: 0px;
-    right: 180px;
+    margin-right: 30px;
+    right: 450px;
+    width: 49%;
   }
 
   .first-video {
@@ -1073,19 +1115,24 @@ iframe {
     top: 800px;
     height: 400px !important;
   }
+  .powered-item {
+    min-height: 250px;
+  }
+
+  .cta {
+    font-size: 17px;
+  }
+
   .cta-wrapper {
     margin-left: 10px;
   }
+
   .coins {
     margin-left: -35px;
   }
+
   .burger-menu {
     display: none;
-  }
-
-  .center-box {
-    bottom: 600px;
-    right: 200px;
   }
 
 }
@@ -1097,6 +1144,11 @@ iframe {
     padding: 0;
     margin: 0;
   }
+
+  .powered-item {
+    min-height: 300px;
+  }
+
   .links-top {
     text-align: center;
   }
@@ -1181,8 +1233,6 @@ iframe {
     background-image: url('../public/fourthbox.png');
   }
 
-
-
   .cta-wrapper {
     text-align: left;
     padding: 0 130px 0 0px;
@@ -1230,6 +1280,14 @@ iframe {
   }
 }
 
+@media only screen and (max-width: 750px) {
+  .powered-item {
+    min-height: 200px;
+  }
+
+}
+
+
 @media only screen and (max-width: 565px) {
   .powered-wrapper {
     margin-top: 120px;
@@ -1256,7 +1314,7 @@ iframe {
   }
 
   .box-label {
-    font-size: 33px;
+    font-size: 22px;
     text-align: left;
   }
 
@@ -1304,7 +1362,7 @@ iframe {
   }
   .box-label {
     width: 100%;
-    font-size: 25px;
+    font-size: 20px;
     line-height: normal;
   }
 

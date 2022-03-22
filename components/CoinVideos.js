@@ -31,7 +31,7 @@ function CoinVideos() {
         {/* THIRD VIDEO */}
         {w > 1699 && <CoinVideo src="https://res.cloudinary.com/werwerwer/video/upload/v1643452608/thirdvideo_sgdp35.mp4" class="third-video" width="457" height="234"/>}
         {w > 1545 && w < 1700 && <CoinVideo src="https://res.cloudinary.com/werwerwer/video/upload/v1643452608/thirdvideo_sgdp35.mp4" class="third-video" width="435" height="224"/>}
-        {w > 1398 && w < 1545 && <CoinVideo src="https://res.cloudinary.com/werwerwer/video/upload/v1643452608/thirdvideo_sgdp35.mp4" class="third-video" width="439" height="230"/>}
+        {w > 1398 && w < 1545 && <CoinVideo src="https://res.cloudinary.com/werwerwer/video/upload/v1643452608/thirdvideo_sgdp35.mp4" class="third-video" width="430" height="230"/>}
         {w > 1200 && w < 1399 && <CoinVideo src="https://res.cloudinary.com/werwerwer/video/upload/v1643452608/thirdvideo_sgdp35.mp4" class="third-video" width="366" height="186"/>}
         {w > 994 && w < 1199 && <CoinVideo src="https://res.cloudinary.com/werwerwer/video/upload/v1643452608/thirdvideo_sgdp35.mp4" class="third-video" width="316" height="160"/>}
         {w == 1200 && <CoinVideo src="https://res.cloudinary.com/werwerwer/video/upload/v1643452608/thirdvideo_sgdp35.mp4" class="third-video" width="275" height="145"/>}

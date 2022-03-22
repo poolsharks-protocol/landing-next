@@ -15,7 +15,7 @@ function Links() {
         >
           <svg
             className="icons-top"
-            width="20"
+            width="30"
             height="30"
             viewBox="0 0 30 30"
             fill="none"
@@ -39,7 +39,7 @@ function Links() {
         >
           <svg
             className="icons-top"
-            width="20"
+            width="30"
             height="30"
             viewBox="0 0 30 30"
             fill="none"
@@ -63,7 +63,7 @@ function Links() {
         >
           <svg
             className="icons-top"
-            width="20"
+            width="30"
             height="34"
             viewBox="0 0 30 34"
             fill="none"
@@ -86,7 +86,7 @@ function Links() {
         >
           <svg
             className="icons-top"
-            width="20"
+            width="30"
             height="30"
             viewBox="0 0 30 30"
             fill="none"
