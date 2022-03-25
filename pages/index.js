@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Poolsharks protocol</title>
+        <title>Home | PoolSharks Protocol</title>
         <meta name="description" content="Smart Contract Automation" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
