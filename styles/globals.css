@@ -526,13 +526,16 @@ iframe {
 .first-video {
   position: absolute;
   left:747px;
-  top: 1030px;
+  top: 1088px;
+  height: 222px;
+  overflow: hidden;
+  width: 429px;
 }
 
 .second-video {
   overflow: hidden;
   width: 429px;
-  height: 227px;
+  height: 226px;
   position: absolute;
   left: 1665px;
   top: 2057px;
@@ -550,7 +553,7 @@ iframe {
 .fourth-video {
   position: absolute;
   left: 1750px;
-  top: 4370px;
+  top: 4369px;
   overflow: hidden;
   width: 433px;
   height: 220px;
@@ -624,7 +627,8 @@ iframe {
 
   .first-video {
     left: 748px;
-    top: 1080px;
+    top: 1090px;
+    width: 427px;
   }
 
   .second-video {
@@ -646,6 +650,7 @@ iframe {
     left:1757px;
     top: 4368px;
     width: 426px;
+    height: 222px;
   }
 
   .coin1, .coin2, .coin3 {
@@ -767,7 +772,7 @@ iframe {
     bottom: 800px;
   }
   .first-video {
-    top: 1087px;
+    top: 1088px;
     left: 636px;
     width: 364px;
     height: 223px;
@@ -881,15 +886,15 @@ iframe {
   .first-video {
     top: 907px;
     left: 576px;
-    width: 329px;
-    height: 183px;
+    width: 327px;
+    height: 185px;
   }
 
   .second-video {
-    width: 332px;
-    height: 191px;
-    left: 1280px;
-    top: 1712px;
+    width: 329px;
+    height: 187px;
+    left: 1281px;
+    top: 1715px;
   }
   
   .third-video {

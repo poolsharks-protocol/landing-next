@@ -1,11 +1,6 @@
-import { useEffect, useState } from "react";
+
 
 function TextBox() {
-  const [w, setW] = useState(0);
-
-  useEffect(() => {
-    setW(window.innerWidth);
-  }, []);
 
   return (
     <div className="first-box">

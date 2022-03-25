@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
@@ -16,6 +15,12 @@ import Links from "../components/Links";
 
 export default function Home() {
   const [w, setW] = useState(0);
+  
+  setInterval(() => {
+    if(window && (w !== window.innerWidth)) {
+      setW(window.innerWidth)
+    }
+  }, 1000);
 
   return (
     <div className={styles.container}>
@@ -35,9 +40,9 @@ export default function Home() {
           <div className="container">
             <div className="pipe-box ">
               <TextBox />
-              <Pipes />
-              <BigVideo />
-              <CoinVideos />
+              <Pipes w={w}/>
+              <BigVideo w={w}/>
+              <CoinVideos w={w}/>
               <SecondBox />
               <ThirdBox />
               <LastBox />

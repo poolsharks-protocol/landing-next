@@ -1,18 +1,10 @@
-import pipe from "../public/pipe.webp";
+import pipe from "../public/pipe.png";
 import coin1 from "../public/coin1.png";
 import coin2 from "../public/coin2.png";
-import {useEffect, useState} from 'react'
 import Image from "next/image";
 
-function Pipes() {
-  const [w, setW] = useState(0)  
+function Pipes({w}) {
 
-
-  useEffect(() => {
-    setW(window.innerWidth)
-  },[])
-
-  
   return (
     <>
       {w > 994 && <img alt="coin" src={coin1.src} className="coin-one" />}

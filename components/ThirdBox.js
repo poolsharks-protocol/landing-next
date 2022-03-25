@@ -1,12 +1,6 @@
-import {useEffect, useState} from 'react'
+
 
 function ThirdBox() {
-  const [w, setW] = useState(0)
-    
-
-    useEffect(() => {
-      setW(window.innerWidth)
-    },[])
 
   return (
     <div className="left-box">
