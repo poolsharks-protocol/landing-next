@@ -2,11 +2,23 @@ import graph from '../public/thegraph.png'
 import ethereum from '../public/ethereum.png'
 import polywrap from '../public/polywrap.png'
 import gelato from '../public/gelato.png'
-
+import { useInViewport } from 'react-in-viewport'
+import {useRef} from 'react'
 
 function PoweredBy() {
+    const myRef = useRef();
+    const {
+      inViewport,
+      enterCount,
+      leaveCount,
+    } = useInViewport(
+      myRef,
+      
+    );
   return (
-    <div className="powered-wrapper mx-0 text-center">
+        <div ref={myRef} className="powered-wrapper mx-0 text-center">
+        {(inViewport || enterCount >= 1) && 
+        <>
         <h1 className='text-center mb-5 powered-label'>Powered By</h1>
         <div className='row mt-5'>
         <div className='col-12 col-md-6 col-xl-6 col-xxl-3 mt-5'>
@@ -42,6 +54,8 @@ function PoweredBy() {
                 </div>
             </div>
         </div>
+        </>
+        }
     </div>
   );
 }
