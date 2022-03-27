@@ -369,17 +369,17 @@ a:hover {
   font-size: 28px;
   font-weight: 500;
   padding: 80px 90px 100px;
-  animation: fadePowered 2s cubic-bezier(1,-0.16,1,-0.08);
+  /* animation: fadePowered 2s cubic-bezier(1,-0.16,1,-0.08); */
 }
 
-@keyframes fadePowered {
+/* @keyframes fadePowered {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
   }
-}
+} */
 
 .powered-icon {
   border-radius: 100px;
