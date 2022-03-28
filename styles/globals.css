@@ -311,7 +311,7 @@ a:hover {
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
-    margin-top: 400px;
+    transform: translateY(220px);
   }
   100% {
     opacity: 1;
@@ -320,44 +320,13 @@ a:hover {
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    margin-top: 400px;
+    transform: translateY(220px);
   }
   100% {
     opacity: 1;
   }
 }
-​ @-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-​ @-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-​ @-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-​ @-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+​ 
 
 .big-margin {
   margin-top: 200px;
@@ -369,17 +338,8 @@ a:hover {
   font-size: 28px;
   font-weight: 500;
   padding: 80px 90px 100px;
-  /* animation: fadePowered 2s cubic-bezier(1,-0.16,1,-0.08); */
 }
 
-/* @keyframes fadePowered {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-} */
 
 .powered-icon {
   border-radius: 100px;
