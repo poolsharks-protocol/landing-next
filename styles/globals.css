@@ -334,7 +334,7 @@ a:hover {
 
 .powered-wrapper {
   margin-top: 10px;
-  margin-bottom: 600px;
+  margin-bottom: 700px;
   font-size: 28px;
   font-weight: 500;
   padding: 80px 90px 100px;
@@ -435,7 +435,7 @@ a:hover {
 
 .first-box {
   position: absolute;
-  top: 590px;
+  top: 500px;
   margin-left: 700px;
   width: 45%;
 }
@@ -655,6 +655,7 @@ iframe {
   }
   .first-box {
     margin-left: 760px;
+    top: 530px;
   }
 
   .right-box {
@@ -771,8 +772,7 @@ iframe {
   }
 
   .shark-img {
-    margin-left: -77px;
-    margin-top: 50px;
+    margin-top: 150px;
   }
 
   .coin1,
@@ -824,7 +824,7 @@ iframe {
   .first-box {
     left: 550px;
     margin-left: 0;
-    top: 500px;
+    top: 450px;
   }
 
   .right-box {
@@ -1028,7 +1028,7 @@ iframe {
 
   .first-box {
     left: 450px;
-    top: 400px;
+    top: 320px;
   }
   .right-box {
     margin-right: 30px;
