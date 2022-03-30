@@ -435,7 +435,7 @@ a:hover {
 
 .first-box {
   position: absolute;
-  top: 500px;
+  top: 515px;
   margin-left: 700px;
   width: 45%;
 }
@@ -532,7 +532,7 @@ iframe {
 .coin-one {
   position: absolute;
   right:1011px;
-  top: 490px;
+  top: 495px;
   z-index: 2;
 }
 
@@ -655,7 +655,7 @@ iframe {
   }
   .first-box {
     margin-left: 760px;
-    top: 530px;
+    top: 523px;
   }
 
   .right-box {
@@ -734,7 +734,7 @@ iframe {
   }
 
   .coin-one {
-    top: 500px;
+    top: 495px;
     right: 873px;
   }
 
@@ -805,6 +805,10 @@ iframe {
     margin-top: 400px;
   }
 
+  .powered-wrapper {
+    padding-bottom: 200px;
+  }
+
   .powered-item {
     min-height: 220px;
   }
@@ -824,7 +828,7 @@ iframe {
   .first-box {
     left: 550px;
     margin-left: 0;
-    top: 450px;
+    top: 433px;
   }
 
   .right-box {
@@ -983,7 +987,7 @@ iframe {
 
   .coin-one {
     height: 100px;
-    top: 300px;
+    top: 304px;
     right: 630px;
   } 
 
