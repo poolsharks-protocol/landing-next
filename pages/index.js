@@ -26,7 +26,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Home | PoolSharks Protocol</title>
-        <meta name="description" content="The Next Wave of DeFi Exchange" />
+        <meta name="description" content="A Decentralized On-Chain Limit Order Book" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

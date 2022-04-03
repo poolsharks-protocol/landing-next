@@ -1,4 +1,4 @@
-import poolshark from '../public/poolshark.png'
+import gradientText from '../public/gradient-text.png'
 import logo from '../public/logo.png'
 import shark from '../public/shark.png'
 import lines from '../public/hero-bg.png'
@@ -15,7 +15,7 @@ function Header() {
         <div className="col-12 col-lg-4 d-flex align-items-end flex-column">
           <div className="cta-wrapper pe-xxl-4 pt-5 me-xxl-5">
             <img alt="logo" src={logo.src} className="logo d-block d-md-none"/>
-            <img alt="Poolsharks" src={poolshark.src} className="poolshark-name" />
+            <img alt="Poolsharks" src={gradientText.src} className="poolshark-name" />
             <button onClick={() =>window.open("https://poolsharks-protocol.github.io/DCEX-Docs/", '_blank')} 
               className="cta mt-5">VIEW DOCS</button>
           </div>
