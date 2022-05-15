@@ -57,7 +57,7 @@ function Links() {
         </a>
         <a
           className="px-1 pe-md-3"
-          href="https://discord.gg/cUPdThWT"
+          href="https://discord.gg/HJhrD9sZ6K"
           target="_blank"
           rel="noreferrer"
         >
@@ -80,7 +80,7 @@ function Links() {
 
         <a
           className="px-1 pe-md-3"
-          href="https://twitter.com/poolsharks_defi"
+          href="https://twitter.com/poolsharks_labs"
           target="_blank"
           rel="noreferrer"
         >

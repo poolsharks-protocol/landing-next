@@ -53,7 +53,7 @@ function Footer() {
             />
           </svg>
         </a>
-        <a href="https://discord.gg/cUPdThWT" target="_blank" rel="noreferrer">
+        <a href="https://discord.gg/HJhrD9sZ6K" target="_blank" rel="noreferrer">
           <svg
             className="icons-top"
             width="20"
@@ -70,7 +70,7 @@ function Footer() {
         </a>
 
         <a
-          href="https://twitter.com/poolsharks_defi"
+          href="https://twitter.com/poolsharks_labs"
           target="_blank"
           rel="noreferrer"
         >
