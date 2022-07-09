@@ -5,10 +5,11 @@ function SecondBox() {
   return (
       <div className="right-box">
       <div className="col-lg-9 col-sm-12 ">
-        <p className= "sm-label-two box-label "><span className='white-txt'>Perform Swaps and Transfers</span> <br/> at a fraction of the cost.</p>
+        <p className= "sm-label-two box-label "><span className='white-txt'>Instant Yield Generation</span><br/>Upon Trade Execution.</p>
         <div className="box-text mt-5 second-text">
-        Operate the "magic hand of DeFi" and save on swaps by grouping with other users.
-       Automate your buy and sell levels over time to take profit from your invesments.
+          <p>When trades are matched on OceanBook, makers receive</p>
+          <p>direct and instant yield. The front of the queue will be able</p>
+          <p>to claim their yield first with truly trustless FIFO ordering.</p>
         </div>
     </div>
     </div>

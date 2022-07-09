@@ -11,9 +11,13 @@ function TextBox() {
         </p>
         <div className="box-text mt-5 first-text">
           <p>
-          Oceanbook provides an order-matching system for everyone.
-          
-          Interact with off-chain market makers on-chain in a fully trustless way.
+          Oceanbook is a permissionless queued order book protocol.
+          </p>
+          <p>
+          Save your spot in the queue for eventual on-chain execution.
+          </p>
+          <p>
+          Optimize your speed to be near the front of the order queue.
           </p>
         </div>
       </div>
