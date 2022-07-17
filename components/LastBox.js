@@ -10,7 +10,7 @@ function LastBox() {
         <CoinVideo  height="150px" src="https://res.cloudinary.com/werwerwer/video/upload/v1658049378/olymp_iwhyas.mp4" />
         </div>
         <div className=" mt-5 box-text fourth-text">
-        <p>Forward operations to PoolSharks in order to set buy and sell</p>
+        <p>Forward operations to PoolSharks in order to create buy and sell</p>
         <p>pairs at set prices. Serve the market according to the needs</p>
         <p>of your user community, growing your treasury over time.</p>
         </div>

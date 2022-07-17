@@ -17,7 +17,7 @@ function Header() {
             <img alt="logo" src={logo.src} className="logo d-block d-md-none"/>
             <img alt="Poolsharks" src={gradientText.src} className="poolshark-name" />
             <button onClick={() =>window.open("https://poolsharks-protocol.github.io/DCEX-Docs/", '_blank')} 
-              className="cta mt-5">VIEW DOCS</button>
+              className="cta mt-5">View Docs</button>
           </div>
         </div>
         <div className="col-lg-6">
