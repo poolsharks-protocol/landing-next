@@ -33,7 +33,7 @@ export default function Home() {
 
 
       <div className="wholeapp">
-        {w < 991 && <img alt="mobile lines" src={mobileLines.src} className="mobile-lines"/>}
+         <img alt="mobile lines" src={mobileLines.src} className="d-block d-lg-none mobile-lines"/>
         <div className="container-fluid">
           <Links />
           <Header />
