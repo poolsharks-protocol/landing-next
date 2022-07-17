@@ -1169,8 +1169,10 @@ iframe {
   }
 
   .box-label {
-    font-size: 35px;
+    font-size: 30px;
     color: white;
+    padding: 0 20px;
+    text-align: center;
   }
 
   .z-index {
@@ -1182,11 +1184,8 @@ iframe {
     width: 100%;
     font-size: 20px;
     border-radius: 10px;
-    padding: 10px;
-    background-repeat: no-repeat;
-    padding: 60px 20px;
-    border-radius: 40px;
-    border: 2px solid rgba(255, 255, 255, 0.479);
+    padding: 00px 20px;
+    text-align: center;
   }
 
   .first-box {
@@ -1211,22 +1210,7 @@ iframe {
     margin-top: 100px;
   }
 
-  .first-text {
-    background-image: url('../public/firstbox.png');
-  }
 
-  .second-text {
-    background-position: bottom;
-    background-image: url('../public/secondbox.png');
-  }
-
-  .third-text {
-    background-image: url('../public/thirdbox.png');
-  }
-
-  .fourth-text {
-    background-image: url('../public/fourthbox.png');
-  }
 
   .cta-wrapper {
     text-align: left;
@@ -1308,16 +1292,13 @@ iframe {
 
   .box-label {
     font-size: 22px;
-    text-align: left;
   }
 
   .sm-label {
     width: 100%;
   }
 
-  .sm-label-two {
-    text-align: left;
-  }
+
 
   .strike {
     text-align: left !important;
@@ -1327,9 +1308,7 @@ iframe {
     margin-top: 100px;
   }
 
-  .box-text {
-    text-align: left !important;
-  }
+
 
   .center-box {
     text-align: left;
