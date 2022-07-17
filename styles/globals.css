@@ -22,6 +22,8 @@ body {
 .footer {
   display: -ms-grid;
   display: grid;
+  position: relative;
+  z-index: 1;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -303,11 +305,11 @@ a:hover {
   width: 110%;
   z-index: 3;
   position: relative;
-  animation: fadeIn 2s  backwards;
-  -webkit-animation: fadeIn 2s  backwards;
-  -moz-animation: fadeIn 2s  backwards;
-  -o-animation: fadeIn 2s  backwards;
-  -ms-animation: fadeIn 2s  backwards;
+  animation: fadeIn 2s  backwards, floatShark 4s ease-in-out infinite;
+  -webkit-animation: fadeIn 2s  backwards, floatShark 4s ease-in-out infinite;
+  -moz-animation: fadeIn 2s  backwards, floatShark 4s ease-in-out infinite;
+  -o-animation: fadeIn 2s  backwards, floatShark 4s ease-in-out infinite;
+  -ms-animation: fadeIn 2s  backwards, floatShark 4s ease-in-out infinite;
 }
 @-webkit-keyframes fadeIn {
   0% {
@@ -325,6 +327,21 @@ a:hover {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes floatShark {
+  0% {
+    -webkit-transform: translatey(0px);
+    transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-10px) ;
+    transform: translatey(-10px) ;
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+    transform: translatey(0px);
   }
 }
 ​ 
@@ -367,7 +384,7 @@ a:hover {
   border: 6px solid white;
   border-radius: 37px;
   margin: 0px 40px;
-  min-height: 280px;
+  height: 100%;
 }
 
 .powered-label {
@@ -833,13 +850,13 @@ iframe {
   }
 
   .right-box {
-    top: 1250px;
+    top: 1150px;
     margin-right: -170px;
   }
 
   .left-box {
     left: 550px;
-    top: 2000px;
+    top: 1940px;
     margin-left: 0;
   }
 
@@ -1024,9 +1041,7 @@ iframe {
     margin-left: -40px;
   }
 
-  .shark-img {
 
-  }
   .lines {
     top: 800px;
   }
@@ -1039,10 +1054,10 @@ iframe {
     margin-right: 30px;
     top: 940px;
     right: 450px;
-    padding-left: 200px;
+    width: 100%;
   }
   .left-box {
-    top: 1600px;
+    top: 1550px;
     left: 450px;
   }
 
@@ -1237,17 +1252,15 @@ iframe {
     top: 0px;
     bottom: 0;
     width: 100vh;
-    left: 300px;
     z-index: 0;
     opacity: .4;
   }
 
   .wholeapp {
-    background-image: url("../public/mobilelines.svg");
-    background-repeat: no-repeat;
-    background-position: 500px;
+    background-image: none;
     z-index: 0;
   }
+  
   .burger-menu {
     display: block;
     position: absolute;

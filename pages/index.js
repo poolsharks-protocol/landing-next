@@ -12,6 +12,7 @@ import Footer from "../components/Footer";
 import { useState } from "react";
 import PoweredBy from "../components/PoweredBy";
 import Links from "../components/Links";
+import mobileLines from '../public/mobilelines.svg';
 
 export default function Home() {
   const [w, setW] = useState(0);
@@ -32,6 +33,7 @@ export default function Home() {
 
 
       <div className="wholeapp">
+        {w < 991 && <img alt="mobile lines" src={mobileLines.src} className="mobile-lines"/>}
         <div className="container-fluid">
           <Links />
           <Header />

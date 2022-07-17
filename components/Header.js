@@ -32,27 +32,6 @@ function Header() {
         </div>
       </div>
     <img alt="lines" src={lines.src} className="lines" />
-
-
-
-    {/* <svg className="burger-menu" width="46" height="35" viewBox="0 0 46 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clipPath="url(#clip0_1263_633)">
-              <rect width="45.5" height="35" rx="10.5" fill="black"/>
-              <path d="M7.00049 28H38.5005V24.5H7.00049V28ZM7.00049 19.25H38.5005V15.75H7.00049V19.25ZM7.00049 7V10.5H38.5005V7H7.00049Z" fill="url(#paint0_linear_1263_633)"/>
-            </g>
-            <defs>
-              <linearGradient id="paint0_linear_1263_633" x1="23" y1="7" x2="23" y2="28" gradientUnits="userSpaceOnUse">
-                <stop offset="0.0273358" stopColor="#C18FFF"/>
-                <stop offset="0.510949" stopColor="#0CB6FF"/>
-                <stop offset="1" stopColor="#27F09E"/>
-              </linearGradient>
-              <clipPath id="clip0_1263_633">
-                <rect width="45.5" height="35" fill="white"/>
-              </clipPath>
-            </defs>
-    </svg> */}
-
-
   </div>
   );
 }

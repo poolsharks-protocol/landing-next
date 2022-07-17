@@ -24,7 +24,7 @@ function CoinVideos({w}) {
             (w > 994 && w < 1198) && '160' ||
             w === 1200 && '137'
           } 
-          src="https://res.cloudinary.com/werwerwer/video/upload/v1656942251/firstVideo_rmt6db.mp4" class="first-video"/>}
+          src="https://res.cloudinary.com/werwerwer/video/upload/v1656942251/firstVideo_rmt6db.mp4" class="first-video"/>
 
 
         {/* SECOND VIDEO */}
@@ -45,7 +45,7 @@ function CoinVideos({w}) {
             (w > 994 && w < 1198) && '149' ||
             w === 1200 && '139'
           } 
-          src="https://res.cloudinary.com/werwerwer/video/upload/v1656942656/secondVideo_gjgi5s.mp4" class="second-video" />
+          src="https://res.cloudinary.com/werwerwer/video/upload/v1656942633/thirdVideo_rofnia.mp4" class="second-video" />
         
         
         {/* THIRD VIDEO */}
@@ -66,7 +66,7 @@ function CoinVideos({w}) {
           (w > 994 && w < 1198) && '150' ||
           w === 1200 && '145'
         } 
-        src="https://res.cloudinary.com/werwerwer/video/upload/v1656942633/thirdVideo_rofnia.mp4" class="third-video" />
+        src="https://res.cloudinary.com/werwerwer/video/upload/v1656942623/fourthVideo_pxvry9.mp4" class="third-video" />
 
 
         {/* FOURTH VIDEO */}
@@ -87,7 +87,7 @@ function CoinVideos({w}) {
           (w > 994 && w < 1198) && '149' ||
           w === 1200 && '153'
         }
-        src="https://res.cloudinary.com/werwerwer/video/upload/v1656942623/fourthVideo_pxvry9.mp4" class="fourth-video" />
+        src="https://res.cloudinary.com/werwerwer/video/upload/v1658049378/olymp_iwhyas.mp4" class="fourth-video" />
 
     </div>}
     </>

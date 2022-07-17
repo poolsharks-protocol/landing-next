@@ -13,8 +13,8 @@ function PoweredBy() {
       leaveCount,
     } = useInViewport(
       myRef,
-      
     );
+    
   return (
         <div ref={myRef} className="powered-wrapper mx-0 text-center">
         {(inViewport || enterCount >= 1) && 
