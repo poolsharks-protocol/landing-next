@@ -1186,6 +1186,10 @@ iframe {
     border-radius: 10px;
     padding: 00px 20px;
     text-align: center;
+    background: rgb(0, 0, 0);
+    padding-top: 16px;
+    border-radius: 20px;
+    border: 1px solid rgb(112, 112, 112);
   }
 
   .first-box {
