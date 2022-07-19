@@ -123,6 +123,13 @@ a:hover {
   height: auto;
 }
 
+.mobile-video{
+  border: 2px solid rgb(112, 112, 112);
+  border-radius: 20px;
+  width: 100%;
+
+}
+
 
 
 .cta-wrapper {

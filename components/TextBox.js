@@ -10,7 +10,7 @@ function TextBox() {
           <span className="white-txt">A New Breed of Orderbook</span>
         </p>
         <div className="mt-5 d-block d-lg-none">
-        <CoinVideo  height="150px" src="https://res.cloudinary.com/werwerwer/video/upload/v1656942251/firstVideo_rmt6db.mp4" />
+        <video className="mobile-video"  src="https://res.cloudinary.com/werwerwer/video/upload/v1656942251/firstVideo_rmt6db.mp4" />
         </div>
         <div className="box-text mt-5 first-text">
           <p>

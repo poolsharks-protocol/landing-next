@@ -7,7 +7,7 @@ function SecondBox() {
       <div className="col-lg-9 col-sm-12 ">
         <p className= "sm-label-two box-label "><span className='white-txt'>Instant Yield Generation</span><br/>Upon Trade Execution.</p>
         <div className="mt-5 d-block d-lg-none">
-        <CoinVideo  height="150px" src="https://res.cloudinary.com/werwerwer/video/upload/v1656942633/thirdVideo_rofnia.mp4" />
+        <video className="mobile-video" src="https://res.cloudinary.com/werwerwer/video/upload/v1656942633/thirdVideo_rofnia.mp4" />
         </div>
         <div className="box-text mt-5 second-text">
           <p>When trades are matched on OceanBook, makers receive</p>

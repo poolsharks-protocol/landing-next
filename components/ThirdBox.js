@@ -9,7 +9,7 @@ function ThirdBox() {
         <span className="white-txt">Powered By On-Chain Oracles</span>
         </p>
         <div className="mt-5 d-block d-lg-none">
-        <CoinVideo  height="150px" src="https://res.cloudinary.com/werwerwer/video/upload/v1656942623/fourthVideo_pxvry9.mp4" />
+        <video className="mobile-video" src="https://res.cloudinary.com/werwerwer/video/upload/v1656942623/fourthVideo_pxvry9.mp4" />
         </div>
         <div className="box-text mt-5 third-text">
         <p>All PoolSharks Books have the ability to enable oracles, unlocking</p>
